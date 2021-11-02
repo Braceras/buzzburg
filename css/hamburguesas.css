@@ -1,0 +1,310 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #000;
+    font-family: 'Kanit', sans-serif;
+    
+}
+/* NAV */
+.navbar{
+    margin-left: 20%;
+
+}
+.navbar-nav{
+    background-color: #161616;
+    
+
+}
+.navbar-nav li:hover{
+    background-color: #262626;
+}
+.navbar-subnav{
+    list-style: none;
+    position: absolute;
+    background-color: #161616;
+    margin: 40px 0px 0px 0px;
+    display: none;
+    width: 288px;
+    
+}
+.navbar-nav:hover > .navbar-subnav{
+    display: block;
+    z-index: 10;
+    
+}
+.navbar-subnav li:hover{
+    background-color: #262626;
+}
+
+
+/* HEADER */
+.gridHeader{
+    padding: 1rem;
+}    
+.burgerIcon{
+    padding: 5px 5px 5px 10px;
+    background-color: #fff;
+    border-radius: 20px;
+    width: 70px;
+    height: 70px;
+    float: left;
+
+    
+}
+.burgerIcon a{
+    float: left;
+}
+.burgerIcon img{
+    width: 50px;
+    height: 60px;
+    transition: all 1s ease;
+}
+.burgerIcon img:hover{
+    transform: rotate(360deg) 
+}
+h1{
+    color: #fff;
+    display: inline-block;
+    padding: 16px 0px 10px 0px;
+    margin-left: 0.6%;
+    
+}
+.pedido{
+    margin-left: 53%;
+    display: inline-block;
+    border-radius: 10px;
+}
+.pedido button{
+    background-color: #fff;
+    display: inline-block;
+    width: 130px;
+    height: 45px;
+    border-radius: 10px;
+    text-align: center;
+    border: none;
+    
+}
+.pedido a{
+    display: inline-block;
+    text-decoration: none;
+    color: #000;
+    
+}
+.pedido button:hover{
+    background-image: linear-gradient(to right, rgb(255, 208, 1), #Fff);
+}
+
+/* MAIN */
+.gridMain{
+    padding: 1rem;
+    
+}
+.content{
+    margin: 0px 10px 60px 300px;
+}
+.content a{
+    text-decoration: none;
+}
+.Buzzburg{
+    background-image: url(../images/fotoSlider6.jpg);
+}
+.Cheeseburger{
+    background-image: url(../images/fotoSlider4.jpg);
+}
+.Chili__cheeseburger{
+    background-image: url(../images/chilibur2.jpg);
+}
+.butterBuzz{
+    background-image: url(../images/butterburger2.jpg);
+}
+.double__double{
+    background-image: url(../images/double__double.jpg);
+}
+.smokeBuzz{
+    background-image: url(../images/smokebuzz2.jpg);
+}
+.caja1{
+    transition: all 1s ease;
+}
+.caja1:hover{
+    padding: 220px 0px 0px 160px;
+}
+.caja2{
+    transition: all 1s ease;
+}
+.caja2:hover{
+    padding: 220px 0px 0px 160px;
+}
+.caja3{
+    transition: all 1s ease;
+}
+.caja3:hover{
+    padding: 220px 0px 0px 160px;
+}
+.caja4{
+    transition: all 1s ease;
+}
+.caja4:hover{
+    padding: 220px 0px 0px 160px;
+}
+.caja5{
+    transition: all 1s ease;
+}
+.caja5:hover{
+    padding: 220px 0px 0px 160px;
+}
+.caja6{
+    transition: all 1s ease;
+}
+.caja6:hover{
+    padding: 220px 0px 0px 160px;
+}
+
+h2{
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 20px;
+    color: #fff;
+    font-family: 'Kanit', sans-serif;
+}
+p{
+    color: #fff;
+    width: 305px;
+    height: 5px;
+    padding: 5px 10px 50px 0px;
+    font-family: 'Kanit', sans-serif;
+    font-size: 11px;
+}
+
+article h2{
+    font-size: 15px;
+}
+
+
+
+/* ASIDE */
+.gridAside{
+    padding: 1rem;
+    position: absolute;
+}
+.menuAside{
+    list-style: none;
+    background-color: #161616;
+    padding: 0;
+
+    width: 210px;
+    height: 370px;
+}
+.menuAside li{
+    display: inline-block;
+    text-align: center;
+    padding: 10px;
+}
+.menuAside li a{
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    padding: 1.5rem;
+    font-family: 'Kanit', sans-serif;
+}
+.menuAside li a:hover{
+    background-color: #262626;
+}
+
+
+
+
+
+/* FOOTER */
+.gridFooter{
+    background-image: linear-gradient(to right, rgb(255, 208, 80), rgb(255, 208, 60), rgb(255, 195, 60), rgb(255, 208, 60), rgb(255, 208, 80));
+}
+h3{
+    display: inline-block;
+    color: #000;
+    padding: 60px;
+    margin: 25px 0px 20px 400px;
+    
+    font-size: 30px;
+    font-family: 'Kanit', sans-serif;
+}
+#imgApp{
+    margin: 45px 0px 10px 0px;
+    
+   
+}
+.botonDescargar{
+    display: inline-block;
+    margin-left: 18%;
+   
+}
+.botonDescargar button{
+    width: 150px;
+    height: 50px;
+    background-color: rgb(59, 114, 197);
+    border: 0;
+    border-radius: 10px;
+    
+}
+.botonDescargar button a{
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Kanit', sans-serif;
+    
+
+}
+.marcaLogo{
+    display: inline-block;
+    margin: 30px 0px 30px 920px;
+    background-color: rgb(95, 133, 190);
+    padding: 1px 10px 0px 10px;
+    border-radius: 10px;
+    
+}
+.logofooter{
+   background-color: #fff;
+   padding: 5px 5px 5px 10px;
+   width: 60px;
+   height: 60px;
+   margin-bottom: 18px;
+   margin-left: 87%;
+   display: inline-block;
+   border-radius: 15px;
+   
+}
+.h5footer{
+   display: inline-block;
+   position: absolute;
+   margin-left: 1rem;
+   
+   
+}
+h5{
+   color: #000;
+   display: inline-block;
+   margin-left: 0.6%;
+   
+   
+}
+.footerOptions{
+   list-style-type: none;
+   height: 54px; 
+   width: 600px;
+   position: absolute;
+}
+.footerOptions li{
+   display: inline-block;
+   text-align: center;
+}
+.footerOptions li a{
+   text-decoration: none;
+   display: inline-block;
+   color: #000;
+   padding: 20px 30px 0px 40px;
+   font-size: 13px;
+   font-family: 'Kanit', sans-serif;
+}

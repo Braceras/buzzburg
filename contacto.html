@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap" rel="stylesheet">
+
+    <title>buzzburg</title>
+    <link rel="stylesheet" href="./css/contacto.css">
+   
+</head>
+<body>
+    <header>
+        <div class="burgericon">
+        <a href="index.html"><img src="images/burgericon.png" width="50px" height="60px" alt="burgericon"></a>
+        </div>
+        <h1>buzzburg</h1> 
+    </header>
+    <nav>
+        <div class="botonRP">
+            <input type="submit" name="Realizar pedido" value="Realizar pedido">
+       </div>
+
+       <ul class="menu">
+        <li><a href="productos.html">Productos</a></li>
+        <ul>
+            <li><a href="hamburguesas.html">Hamburguesas</a></li>
+            <li><a href="promociones.html">Promociones</a></li>
+            <li><a href="postres.html">Postres</a></li>
+        </ul>
+        <li><a href="nosotros.html">Nosotros</a></li>
+        <li><a href="local.html">Local</a></li>
+        <li><a href="ayuda.html">Ayuda</a></li>
+    </ul>
+        
+
+        <hr>
+    </nav>
+    <main>
+        <section>
+            <h2>CONTACTO</h2>
+            <p>No dudes en ponerte en contacto con nosotros si tienes dudas o sugerencias</p>
+            <form action="#">
+                <legend>Completa el formulario con tus datos</legend>
+                <div>
+                    <label for="name">*Nombres</label>
+                    <input type="text" name="nombres" required>
+                </div>
+                <div>
+                    <label for="apellidos">*Apellidos</label>
+                    <input type="text" name="apellidos" required>
+                </div>
+                <div>
+                    <label for="email">*E-mail</label>
+                    <input type="email" required>
+                </div>
+                <div>
+                    <label for="telefono">Teléfono</label>
+                    <input type="text" required>
+                </div>
+                <div>
+                    <label for="ciudad">Ciudad</label>
+                    <input type="text" name="ciudad" required>
+                </div>
+                <div>
+                    <label for="asunto">Asunto</label>
+                    <select>
+                        <option value="sugerencia">Sugerencia</option>
+                        <option value="consultas">Consultas</option>
+                        <option value="puertas abiertas">Puertas abiertas</option>
+                        <option value="critica">Critica</option>
+                        <option value="reclamo">Reclamo</option>
+                        <option value="elogio">Elogio</option>
+                        <option value="datos personales">Datos personales</option>
+                        <option value="otros">Otros</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="comentario" name="comentario">*Mensaje</label>
+                    <textarea name="comentario" id="mensaje" cols="25" rows="1"></textarea>
+
+                </div>
+                <div>
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Borrar Formulario">
+                </div>
+            </form>
+            <hr>
+
+        </section>
+        <hr>
+
+    </main>
+    <footer>
+        <h3>DESCARGA NUESTRA APP</h3>
+        <img src="images/phone.png" width="100px" alt="phone" id="imgApp">
+        <div class="botonDescargar">
+        <button><a href="" target="_BLANK">Descargar ahora</a></button></div><br>
+        <div class="marcaLogo">
+        <img src="images/applelogo.png" width="30px" alt="applelogo">
+        <img src="images/androidlogo.png" width="30px" alt="androidlogo">
+        </div>
+        <hr>
+        <ul class="footerOptions">
+            <li><a href="pdp.html">Política de privacidad</a></li>
+            <li><a href="https://www.buenosaires.gob.ar/defensaconsumidor" target="_BLANK">Defensa del consumidor</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+        <div class="logofooter">
+            <img src="images/burgericon.png" width="40px" height="50px" alt="burgericon">
+            <div class="h5footer">
+                <h5>© buzzburg 2021</h5>
+            </div>
+        </div>
+
+    </footer>
+    
+</body>
+</html>

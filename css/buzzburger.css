@@ -1,0 +1,278 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: linear-gradient(to right, #000, rgb(0, 6, 14));
+}
+.gridContainer{
+    display: grid;
+    grid-template-columns: 1fr, 1fr, 1fr, 1fr;
+    grid-template-rows: 1fr, 1fr, 1fr;
+    grid-template-areas:
+    "header nav nav header"
+    "main main main main"
+    "footer footer footer footer";
+}
+
+/* HEADER*/
+.gridHeader{
+    padding: 1rem;
+}
+.burgerIcon{
+    padding: 5px 5px 5px 10px;
+    background-color: #fff;
+    width: 70px;
+    height: 70px;
+    float: left;
+
+    
+}
+.burgerIcon a{
+    float: left;
+}
+.burgerIcon img{
+    width: 50px;
+    height: 60px;
+    transition: all 1s ease;
+}
+.burgerIcon img:hover{
+    transform: rotate(360deg) 
+}
+h1{
+    color: #fff;
+    display: inline-block;
+    padding: 19.2px 0px 10px 0px;
+    margin-left: 0.6%;
+    font-family: 'Kanit', sans-serif;
+    
+}
+
+
+/* NAV */
+.nav{
+    padding: 3rem;
+}
+.menu{
+   margin-left: 25%;
+   list-style: none;
+   width: 700px;
+   height: 60px;
+   display: flex;
+   justify-content: space-between;
+   
+}
+
+.menu li{
+    display: inline-block;
+    font-size: 17px;
+    position: relative;
+}
+.menu ul{ 
+    position: absolute;
+    display: none; 
+}
+.menu ul li{
+    display: block;
+}
+.menu ul li a{
+    background-image: linear-gradient(to right, #000, rgb(0, 5, 10));
+}
+
+.menu li a{
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Kanit', sans-serif;
+    padding: 0px 30px 0px 30px;
+    background-color: #000;
+    transition: all 0.5s ease;
+}
+.menu li a:hover{
+    background-color: #161616;
+}
+
+.menu li:hover > ul{
+    display: block;
+    margin-top: 34px;
+    background-color: #161616;
+    text-align: center;
+    padding: 20px 0px 20px 0px; 
+}
+
+.botonRP{
+    float: right;
+    margin: 10px 0px 0px 0px;
+    transition: all 1s ease;
+}
+
+.botonRP input{
+   background-color: rgb(59, 114, 197);
+   color: #fff;
+   width: 150px;
+   height: 50px;
+   border: 0ch;
+   font-family: 'Kanit', sans-serif;
+   
+}
+.botonRP:hover{
+    transform: translate(2px, 2px);
+}
+
+
+
+
+/* MAIN */
+.gridMain{
+    padding: 1rem;
+    
+}
+h2{
+    margin-bottom: 1.5rem;
+    margin-left: 2rem;
+    color: #fff;
+    font-family: 'Chakra Petch', sans-serif;
+}
+.tablabuzz{
+    width: 40rem;
+    margin-left: 400px;
+    margin-bottom: 6rem;
+    
+    
+}
+tr{
+    color: #fff;
+    height: 50px;
+    
+}
+th{
+    font-family: 'Chakra Petch', sans-serif;
+}
+.content1{
+    padding: 3rem;
+    font-family: 'Chakra Petch', sans-serif;
+}
+.content2{
+    padding: 3rem;
+    font-family: 'Chakra Petch', sans-serif;
+}
+.content3{
+    padding: 3rem;
+    font-family: 'Chakra Petch', sans-serif;
+}
+li{
+    color: #fff;
+    
+}
+.buzzburger{
+    width: 250px;
+    height: 250px;
+    margin-left: 2rem;
+    margin-top: 1.3rem;
+    
+}
+.buzzcontainer{
+    background-image: linear-gradient(to right, #161616, rgb(0, 6, 14));
+    display: inline-block;
+    position: absolute;
+    width: 330px;
+    height: 270px;
+}
+
+
+
+
+
+/* FOOTER */
+.gridFooter{
+    background-image: linear-gradient(to right, #161616, rgb(0, 5, 10));
+    height: 25rem;
+    
+    
+}
+ h3{
+     display: inline-block;
+     color: #fff;
+     padding: 60px;
+     margin: 25px 0px 20px 200px;
+     
+     font-size: 30px;
+     font-family: 'Kanit', sans-serif;
+ }
+ #imgApp{
+     margin: 45px 0px 10px 0px;
+     display: inline-block;
+     position: absolute;
+ }
+ .botonDescargar{
+     display: inline-block;
+     margin-left: 18%;
+    
+ }
+ .botonDescargar button{
+     width: 150px;
+     height: 50px;
+     background-color: rgb(59, 114, 197);
+     border: 0;
+     display: inline-block;
+ }
+ .botonDescargar button a{
+     color: #fff;
+     text-decoration: none;
+     font-family: 'Kanit', sans-serif;
+     display: inline-block;
+
+ }
+ .marcaLogo{
+     display: inline-block;
+     margin: 30px 0px 30px 920px;
+     background-color: rgb(95, 133, 190);
+     padding: 1px 10px 0px 10px;
+     
+ }
+ .logofooter{
+    background-color: #fff;
+    padding: 5px 5px 5px 10px;
+    width: 60px;
+    height: 60px;
+    margin-top: 6px;
+    margin-left: 87%;
+    display: inline-block;
+    
+ }
+ .logofooterimg{
+    margin-top: 30px;
+    display: inline-block;
+ }
+ .h5footer{
+    display: inline-block;
+    position: absolute;
+    margin-left: 1rem;
+    margin-top: 2rem;
+    font-family: 'Kanit', sans-serif;
+ }
+ h5{
+    color: #fff;
+    display: inline-block;
+    margin-left: 0.6%;
+    
+    
+ }
+.footerOptions{
+    list-style-type: none;
+    height: 54px; 
+    width: 550px;
+    position: absolute;
+}
+.footerOptions li{
+    display: inline-block;
+    text-align: center;
+}
+.footerOptions li a{
+    text-decoration: none;
+    display: inline-block;
+    color: #fff;
+    padding: 20px 30px 0px 40px;
+    font-size: 13px;
+    font-family: 'Kanit', sans-serif;
+}
