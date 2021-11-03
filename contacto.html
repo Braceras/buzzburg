@@ -12,36 +12,63 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
     <title>buzzburg</title>
-    <link rel="stylesheet" href="./css/contacto.css">
+    <link rel="stylesheet" href="./css/contacto.css"> 
    
 </head>
 <body>
-    <header>
-        <div class="burgericon">
-        <a href="index.html"><img src="images/burgericon.png" width="50px" height="60px" alt="burgericon"></a>
-        </div>
+    <div class="gridContainer">
+        <!--HEADER-->
+    <header class="gridHeader">
+        <div class="burgerIcon">
+          <a href="./index.html"><img src="images/burgericon.png" alt="burgericon"></a>
+        </div> 
         <h1>buzzburg</h1> 
+        <div class="row">
+        <div class="pedido col-xs-4 col-sm-4 col-md-4 col-lg-4">
+        <button><a href="https://www.pedidosya.com.ar" target="_BLANK">Hacer Pedido</a></button>
+        </div>
+        </div>
     </header>
-    <nav>
-        <div class="botonRP">
-            <input type="submit" name="Realizar pedido" value="Realizar pedido">
-       </div>
 
-       <ul class="menu">
-        <li><a href="productos.html">Productos</a></li>
-        <ul>
-            <li><a href="hamburguesas.html">Hamburguesas</a></li>
-            <li><a href="promociones.html">Promociones</a></li>
-            <li><a href="postres.html">Postres</a></li>
-        </ul>
-        <li><a href="nosotros.html">Nosotros</a></li>
-        <li><a href="local.html">Local</a></li>
-        <li><a href="ayuda.html">Ayuda</a></li>
-    </ul>
+    <!--Comienzo del NAV-->
+    <nav class="navbar navbar-expand-lg navbar-light col-4 p-2">
+        <div class="container-fluid row">
+          <div class="collapse navbar-collapse" id="navbarNav col-xs-4 col-sm-4 col-md-4 col-lg-4">
+            <ul class="navbar-nav">
+              <li class="nav-item1">
+                <a class="nav-link active text-light" aria-current="page" href="./productos.html">Productos</a>
+              </li>
+              <ul class="navbar-subnav row col-lg-6">
+                <li class="nav-item">
+                    <a class="nav-link active text-light" aria-current="page" href="./productos.html">Nuestros Productos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active text-light" aria-current="page" href="./hamburguesas.html">Hamburguesas</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active text-light" aria-current="page" href="./promociones.html">Promociones</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active text-light" aria-current="page" href="./postres.html">Postres</a>
+                  </li>
+              </ul>
+              <li class="nav-item">
+                <a class="nav-link active text-light" href="./nosotros.html">Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active text-light" href="./local.html">Local</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active text-light" href="./ayuda.html">Ayuda</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
         
 
-        <hr>
-    </nav>
+        <hr> 
+
 
     <!--MAIN-->
     <main>
