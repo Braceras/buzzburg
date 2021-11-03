@@ -1,0 +1,51 @@
+@import "body";
+@import "header";
+@import "nav";
+@import "footer";
+
+/* MAIN */
+section{
+    color: #fff;
+    font-family: 'Chakra Petch', sans-serif;
+    
+    h2{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 15px;
+    }
+    .pedido2{
+    margin: 1rem 0rem 1rem 43.5%;
+    display: inline-block;
+    border-radius: 10px;
+    }
+    .pedido2 button{
+        background-color: #fff;
+        display: inline-block;
+        width: 130px;
+        height: 45px;
+        border-radius: 10px;
+        text-align: center;
+        border: none;
+        &:hover{
+            background-image: linear-gradient(to right, rgb(255, 208, 1), #Fff);
+        }
+    }
+    .pedido2 a{
+        display: inline-block;
+        text-decoration: none;
+        color: #000;
+    }
+
+    .pointer{
+        background-color: #fff;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        width: 20px;
+        margin-left: 620px;
+    }
+}
+
+
+
+

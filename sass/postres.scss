@@ -1,0 +1,95 @@
+@import "body";
+@import "header";
+@import "nav";
+@import "aside";
+@import "footer";
+
+/* MAIN */
+.gridMain{
+    padding: 1rem;
+    
+    .content{
+        margin: 0px 10px 60px 300px;
+    }
+    .content a{
+        text-decoration: none;
+    }
+    .helado1{
+    background-image: url(../images/helado1\(2\).jpg);
+    }
+    .helado2{
+        background-image: url(../images/helado2.jpeg);
+    }
+    .helado3{
+        background-image: url(../images/heladofrutilla.jpg);
+    }
+    .helado4{
+        background-image: url(../images/helado4.jpg);
+    }
+    .helado5{
+        background-image: url(../images/helado5\(2\).jpg);
+    }
+    .helado6{
+        background-image: url(../images/helado6.jpg);
+    }
+    .caja1{
+        transition: all 1s ease;
+        &:hover{
+            padding: 220px 0px 0px 160px;
+        }
+    }
+    .caja2{
+        transition: all 1s ease;
+        &:hover{
+            padding: 220px 0px 0px 160px;
+        }
+    }
+    .caja3{
+        transition: all 1s ease;
+        &:hover{
+            padding: 220px 0px 0px 160px;
+        }
+    }
+    .caja4{
+        transition: all 1s ease;
+        &:hover{
+            padding: 220px 0px 0px 160px;
+        }
+    }
+    .caja5{
+        transition: all 1s ease;
+        &:hover{
+            padding: 220px 0px 0px 160px;
+        }
+    }
+    .caja6{
+        transition: all 1s ease;
+        &:hover{
+            padding: 220px 0px 0px 160px;
+        }
+    }
+    h2{
+        text-align: center;
+        margin-bottom: 40px;
+        font-size: 20px;
+        color: #fff;
+        font-family: 'Kanit', sans-serif;
+    }
+    p{
+        color: #fff;
+        width: 305px;
+        height: 5px;
+        padding: 5px 10px 50px 0px;
+        font-family: 'Kanit', sans-serif;
+        font-size: 11px;
+    }
+    article h2{
+        font-size: 15px;
+    }
+} 
+
+
+
+
+
+

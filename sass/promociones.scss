@@ -1,0 +1,95 @@
+@import "body";
+@import "header";
+@import "nav";
+@import "aside";
+@import "footer";
+
+
+/* MAIN */
+.gridMain{
+    padding: 1rem;
+
+    .content{
+        margin: 0px 10px 60px 300px;
+    }
+    .content a{
+        text-decoration: none;
+    }
+    .promo1{
+        background-image: url(../images/fotoSlider6.jpg);
+    }
+    .promo2{
+        background-image: url(../images/fotoSlider4.jpg);
+    }
+    .promo3{
+        background-image: url(../images/double__double.jpg);
+    }
+    .promo4{
+        background-image: url(../images/smokebuzz2.jpg);
+    }
+    .promo5{
+        background-image: url(../images/butterburger2.jpg);
+    }
+    .promo6{
+        background-image: url(../images/chilibur2.jpg);
+    }
+    .caja1{
+        transition: all 1s ease;
+        &:hover{
+            padding: 220px 0px 0px 160px;
+        }
+    }
+    .caja2{
+        transition: all 1s ease;
+        &:hover{
+            padding: 220px 0px 0px 160px;
+        }
+    }
+    .caja3{
+        transition: all 1s ease;
+        &:hover{
+            padding: 220px 0px 0px 160px;
+        }
+    }
+    .caja4{
+        transition: all 1s ease;
+        &:hover{
+            padding: 220px 0px 0px 160px;
+        }
+    }
+    .caja5{
+        transition: all 1s ease;
+        &:hover{
+            padding: 220px 0px 0px 160px;
+        }
+    }
+    .caja6{
+        transition: all 1s ease;
+        &:hover{
+            padding: 220px 0px 0px 160px;
+        }
+    }
+    h2{
+        text-align: center;
+        margin-bottom: 40px;
+        font-size: 20px;
+        color: #fff;
+        font-family: 'Kanit', sans-serif;
+    }
+    p{
+        color: #fff;
+        width: 305px;
+        height: 5px;
+        padding: 5px 10px 50px 0px;
+        font-family: 'Kanit', sans-serif;
+        font-size: 11px;
+    }
+    article h2{
+        font-size: 15px;
+    }
+    
+}
+
+
+
+

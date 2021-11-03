@@ -1,0 +1,49 @@
+@import "body";
+@import "header";
+@import "nav";
+@import "footer";
+
+
+/* MAIN */
+.gridMain{
+    padding: 1rem;
+    p{
+        color: #fff;
+        z-index: 100;
+    }
+    h2{
+        color: #fff;
+        font-family: 'Chakra Petch', sans-serif;
+        
+    }
+    .local12{
+        display: inline-block;
+        margin-left: 8%;
+        margin-bottom: 2rem;
+        
+    }
+    .nosotros{
+        margin: 0rem 0rem 0rem 0.5rem;
+        background-color: #161616;
+    }
+    .local13{
+        float: right;
+        margin-left: 10px;
+    }
+    .pnc{
+        margin: 0rem 0rem 0rem 0.5rem;
+        background-color: #161616;
+    }
+    .inframe1{
+        margin-left: 25%;
+        margin-top: 100px;
+        margin-bottom: 70px;
+        
+    }
+}
+
+
+
+
+
+

@@ -1,0 +1,57 @@
+/* HEADER */
+.gridHeader{
+    padding: 1rem;
+
+    .burgerIcon{
+        padding: 5px 5px 5px 10px;
+        background-color: #fff;
+        border-radius: 20px;
+        width: 70px;
+        height: 70px;
+        float: left;
+    
+        
+    }
+    .burgerIcon a{
+        float: left;
+    }
+    .burgerIcon img{
+        width: 50px;
+        height: 60px;
+        transition: all 1s ease;
+        &:hover{
+            transform: rotate(360deg) 
+        }
+    }
+    h1{
+        color: #fff;
+        display: inline-block;
+        padding: 16px 0px 10px 0px;
+        margin-left: 0.6%;
+        
+    }
+    .pedido{
+        margin-left: 53%;
+        display: inline-block;
+        border-radius: 10px;
+    }
+    .pedido button{
+        background-color: #fff;
+        display: inline-block;
+        width: 130px;
+        height: 45px;
+        border-radius: 10px;
+        text-align: center;
+        border: none;
+        &:hover{
+            background-image: linear-gradient(to right, rgb(255, 208, 1), #Fff);
+        }
+    }
+    .pedido a{
+        display: inline-block;
+        text-decoration: none;
+        color: #000;
+        
+    }
+
+}    

@@ -1,0 +1,61 @@
+@import "body";
+@import "header";
+@import "nav";
+@import "footer";
+
+/* MAIN */
+.gridMain{
+    padding: 1rem;
+    
+    h2{
+        margin-bottom: 1.5rem;
+        margin-left: 2rem;
+        color: #fff;
+        font-family: 'Chakra Petch', sans-serif;
+    }
+    .tablabuzz{
+        width: 40rem;
+        margin-left: 400px;
+        margin-bottom: 6rem;
+        
+        
+    }
+    tr{
+        color: #fff;
+        height: 50px;
+        
+    }
+    th{
+        font-family: 'Chakra Petch', sans-serif;
+    }
+    .content1{
+        padding: 3rem;
+        font-family: 'Chakra Petch', sans-serif;
+    }
+    .content2{
+        padding: 3rem;
+        font-family: 'Chakra Petch', sans-serif;
+    }
+    .content3{
+        padding: 3rem;
+        font-family: 'Chakra Petch', sans-serif;
+    }
+    li{
+        color: #fff;
+        
+    }
+    .buzzburger{
+        width: 250px;
+        height: 250px;
+        margin-left: 2rem;
+        margin-top: 1.3rem;
+        
+    }
+    .buzzcontainer{
+        background-image: linear-gradient(to right, #161616, rgb(0, 6, 14));
+        display: inline-block;
+        position: absolute;
+        width: 330px;
+        height: 270px;
+    }
+}
