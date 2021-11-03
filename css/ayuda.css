@@ -101,14 +101,20 @@ h1{
 
 
 /* MAIN */
-
+.gridMain{
+    background-color: #161616;
+    border-radius: 6rem;
+}
 section{
     color: #fff;
     display: inline-block;
-    margin-bottom: 4rem;
-    margin-left: 20%;
+    margin: 4rem 0rem 3rem 30%;
+    
     
 
+}
+label{
+    display: flex;
 }
 
 .buscar{

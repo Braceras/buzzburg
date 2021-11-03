@@ -6,34 +6,48 @@
 /* MAIN */
 main{
     padding: 1rem;
-
-    h2{
+}
+h2{
     color: #fff;
     font-family: 'Kanit', sans-serif;
     margin-left: 300px;
 
-    }
-    p{
-        color: #fff;
-        font-family: 'Kanit', sans-serif;
-        margin: 5px 0px 0px 302px;
-    }
-    form{
-        background-color: #161616;
-        display: inline-block;
-        margin: 30px 30px 50px 300px;
-        padding: 50px;
-        width: 600px;
-        height: 200px;
-        color: #fff;
-        font-family: 'Kanit', sans-serif;
-    
-    }
-    form legend{
-        color: #fff;
-        
-    }
 }
+p{
+    color: #fff;
+    font-family: 'Kanit', sans-serif;
+    margin: 5px 0px 0px 302px;
+}
+form{
+    background-color: #161616;
+    display: inline-block;
+    margin: 30px 30px 50px 300px;
+    padding: 50px;
+    width: 35rem;
+    height: 35rem;
+    color: #fff;
+    font-family: 'Kanit', sans-serif;
 
-
-
+}
+input{
+    background-color: #262626;
+    display: flex;
+}
+.asunto{
+    display: flex;
+    
+}
+.comentario{
+    display: flex;
+}
+.boton{
+    background-color: #fff;
+    border: 0;
+    border-radius: 0.4rem;
+    display: inline-block;
+    margin: 0.3rem;
+    padding: 0.4rem;
+}
+.boton:hover{
+    background-image: linear-gradient(to right, rgb(255, 208, 1), #Fff);
+}

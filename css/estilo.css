@@ -101,7 +101,7 @@ h1{
 .content{
     margin: 30px;
     color: #fff;
-
+    
 }
 .content a{
     display: inline-block;
@@ -110,7 +110,7 @@ h1{
 }
 
 .planFamiliar{
-    background-image: url(../images/comboshake1.jpg);
+    background-image: url(./../images/comboshake5.jpg);
 }
 .caja1{
     transition: all 1s ease;
