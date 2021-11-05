@@ -52,7 +52,7 @@ body{
 .burgerIcon{
     padding: 5px 5px 5px 10px;
     background-color: #fff;
-    border-radius: 20px;
+    border-radius: 1.2rem;
     width: 70px;
     height: 70px;
     float: left;
@@ -73,7 +73,7 @@ body{
 h1{
     color: #fff;
     display: inline-block;
-    padding: 16px 0px 10px 0px;
+    padding: 0.8rem 0rem 1rem 0rem;
     margin-left: 0.6%;
     font-size: 2.5rem;
     
@@ -106,7 +106,7 @@ h1{
     background-color: #262626;
 }
 .menu__ham{
-    display: flex;
+    display: block;
     border-style: solid;
     border-color: #fff;
     border-radius: 0.6rem;
@@ -133,7 +133,7 @@ h1{
     grid-auto-flow: column;
     gap: 3em;
     position: absolute;
-    margin: 25rem 0rem 0rem 0rem;
+    margin: 1rem 0rem 0rem 0rem;
     width: 91%;
     height: 17.78rem;
     background-color: #000;
@@ -368,6 +368,9 @@ h5{
 
 @media only screen and (max-width: 768px){
     .pedido button{
+        display: none;
+    }
+    .navbar{
         display: none;
     }
     .burgerIcon{
