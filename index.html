@@ -16,7 +16,30 @@
    
 </head>
 <body>
-    <div class="gridContainer">
+  <div class="gridContainer">
+    
+    <!-- MENU HAMBURGUESA-->
+  <div class="menu__ham">
+    <label for="menu" class="menu__label">
+      <img src="./images/bx-menu.svg" class="menu__reg">
+    </label>
+    <input type="checkbox" id="menu" class="menu__input">
+    <div class="menu__ham__content">
+      <ul class="nav__ham">
+        <li><a href="./productos.html">Productos</a></li>
+        <ul class="subnav__ham">
+          <li><a href="./productos.html">Nuestros productos</a></li>
+          <li><a href="./hamburguesas.html">Hamburguesas</a></li>
+          <li><a href="./promociones.html">Promociones</a></li>
+          <li><a href="./postres.html">Postres</a></li>
+        </ul>
+        <li><a href="./nosotros.html">Nosotros</a></li>
+        <li><a href="./local.html">Local</a></li>
+        <li><a href="./ayuda.html">Ayuda</a></li>
+      </ul>
+    </div>
+  </div>
+
         <!--HEADER-->
     <header class="gridHeader">
         <div class="burgerIcon">
@@ -30,12 +53,16 @@
         </div>
     </header>
 
+    
+
+    
+
     <!--Comienzo del NAV-->
-    <nav class="navbar navbar-expand-lg navbar-light col-4 p-2">
+    <nav class="navbar navbar-expand-md navbar-light col-4 p-2">
         <div class="container-fluid row">
           <div class="collapse navbar-collapse" id="navbarNav col-xs-4 col-sm-4 col-md-4 col-lg-4">
             <ul class="navbar-nav">
-              <li class="nav-item1">
+              <li class="nav-item">
                 <a class="nav-link active text-light" aria-current="page" href="./productos.html">Productos</a>
               </li>
               <ul class="navbar-subnav row col-lg-6">
@@ -65,9 +92,10 @@
           </div>
         </div>
       </nav>
+      
         
 
-        <hr>
+        
 
     <!-- MAIN -->
     <main class="gridMain">
@@ -127,9 +155,6 @@
         <img src="images/phone.png" width="100px" alt="phone" id="imgApp">
         <div class="botonDescargar">
         <button><a href="" target="_BLANK">Descargar ahora</a></button></div><br>
-        <div class="marcaLogo">
-        <img src="images/applelogo.png" width="30px" alt="applelogo">
-        <img src="images/androidlogo.png" width="30px" alt="androidlogo">
         </div>
         </div>
         <hr>
