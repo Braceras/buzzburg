@@ -365,7 +365,6 @@ h5{
    font-family: 'Kanit', sans-serif;
 }
 
-
 @media only screen and (max-width: 768px){
     .pedido button{
         display: none;
@@ -376,6 +375,7 @@ h5{
     .burgerIcon{
         width: 55px;
         height: 55px;
+        margin-left: 1.5rem;
     }
     .burgerIcon img{
         width: 35px;
@@ -392,29 +392,28 @@ h5{
     }
     h3{
         margin: 0;
-        margin-left: 1.3rem;
+        margin-left: 2.5rem;
         font-size: 20px;
         
     }
     #imgApp{
-        margin: 0rem 0rem 0rem 9rem;
+        margin: 0rem 0rem 0rem 10.5rem;
         
     }
     .botonDescargar{
-        margin: 0rem 0rem 0rem 7rem;
+        margin: 0rem 0rem 0rem 8.5rem;
         
     }
     .footerOptions{
-        
-        width: 99%;
+        width: 100%;
         display: flex;
     }
     .footerOptions li a{
         font-size: 10px;
-        padding: 0.5rem;
+        padding: 1rem;
     }
     .logofooter{
-        margin: 3rem 0rem 1rem 7rem;
+        margin: 3rem 0rem 1rem 8.5rem;
     }
     
 } 
@@ -425,6 +424,7 @@ h5{
     
     
 }
+
 @media only screen and (min-width: 600px){
     h3{
         margin: 1rem 4rem 0rem 7rem;
