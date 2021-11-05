@@ -111,13 +111,13 @@ h1{
     border-color: #fff;
     border-radius: 0.6rem;
     height: 100%;
-    width: 3.5rem;
+    width: 3.2rem;
     margin: 1rem 0rem 0rem 0.9rem;
     align-items: center;
     
 }
 .menu__reg{
-    width: 2.3rem;
+    width: 2rem;
     height: 2.3rem;
     margin-left: 0.4rem;
 }
@@ -133,9 +133,9 @@ h1{
     grid-auto-flow: column;
     gap: 3em;
     position: absolute;
-    margin: 12rem 0rem 0rem 0rem;
-    width: 93.9%;
-    height: 20.1rem;
+    margin: 25rem 0rem 0rem 0rem;
+    width: 91%;
+    height: 17.78rem;
     background-color: #000;
     border-radius: 2rem;
     border-style: solid;
@@ -150,8 +150,9 @@ h1{
 }
 .menu__ham__content li{
     list-style: none;
-    padding: 1.05rem;
+    padding: 1rem;
     border-radius: 2rem;
+    width: 18rem;
 }
 .menu__ham__content li:hover{
     background-color: #262626;
@@ -160,13 +161,21 @@ h1{
 .menu__ham__content a{
     color: #Fff;
     text-decoration: none;
+    font-size: 0.9rem;
     
 }
 .subnav__ham{
     display: flex;
-    font-size: 0.8rem;
-    padding: 1rem;
     margin: 0;
+    padding: 0;
+}
+.subnav__ham li{
+    width: 4.5rem;
+    text-align: center;
+    padding: 0.2rem;
+}
+.subnav__ham a{
+    font-size: 0.5rem;
 }
 
 
@@ -181,6 +190,7 @@ h1{
     display: inline-block;
     text-decoration: none;
     color: #fff;
+    width: 100%;
 }
 
 .planFamiliar{
@@ -361,12 +371,12 @@ h5{
         display: none;
     }
     .burgerIcon{
-        width: 60px;
-        height: 60px;
+        width: 55px;
+        height: 55px;
     }
     .burgerIcon img{
-        width: 40px;
-        height: 50px;
+        width: 35px;
+        height: 45px;
     }
     h1{
         font-size: 2rem;
@@ -375,24 +385,33 @@ h5{
         display: none;
     }
     .gridHeader{
-        margin-left: 30%;
+        margin: 1.5rem 0rem 0rem 4.5rem;
     }
     h3{
-        margin: 1rem 4rem 0rem 2.5rem;
+        margin: 0;
+        margin-left: 1.3rem;
+        font-size: 20px;
+        
     }
     #imgApp{
-        margin: 0rem 0rem 1rem 20%;
+        margin: 0rem 0rem 0rem 9rem;
+        
     }
     .botonDescargar{
-        margin: 0rem 1rem 0rem 5rem;
+        margin: 0rem 0rem 0rem 7rem;
+        
+    }
+    .footerOptions{
+        
+        width: 99%;
+        display: flex;
     }
     .footerOptions li a{
         font-size: 10px;
-        padding: 0.7rem;
-        margin-left: 2.5rem;
+        padding: 0.5rem;
     }
     .logofooter{
-        margin: 3rem 0rem 1rem 40%;
+        margin: 3rem 0rem 1rem 7rem;
     }
     
 } 
