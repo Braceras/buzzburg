@@ -11,7 +11,7 @@ body{
 /* NAV */
 .navbar{
     margin-left: 32%;
-    width: 0;
+    width: 30rem;
 
 }
 .navbar-nav{
@@ -44,6 +44,28 @@ body{
     background-color: #262626;
 }
 
+.pedido button{
+    background-color: #000;
+    display: inline-block;
+    width: 130px;
+    height: 45px;
+    border-radius: 10px;
+    text-align: center;
+    border: #fff solid;
+    
+    
+}
+.pedido a{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    
+    
+}
+.pedido button:hover{
+    background-color: #262626;
+}
+
 
 /* HEADER */
 .gridHeader{
@@ -73,8 +95,8 @@ body{
 h1{
     color: #fff;
     display: inline-block;
-    padding: 0.8rem 0rem 1rem 0rem;
-    margin-left: 0.6%;
+    padding: 1rem 0rem 1rem 0rem;
+    margin-left: 0.4%;
     font-size: 2.5rem;
     
 }
@@ -83,27 +105,6 @@ h1{
     display: inline-block;
     border-radius: 2rem;
     width: 0;
-}
-.pedido button{
-    background-color: #000;
-    display: inline-block;
-    width: 130px;
-    height: 45px;
-    border-radius: 10px;
-    text-align: center;
-    border: #fff solid;
-    
-    
-}
-.pedido a{
-    display: inline-block;
-    text-decoration: none;
-    color: #fff;
-    
-    
-}
-.pedido button:hover{
-    background-color: #262626;
 }
 .menu__ham{
     display: block;
@@ -313,14 +314,6 @@ h3{
     
 
 }
-.marcaLogo{
-    display: inline-block;
-    margin: 30px 0px 30px 920px;
-    background-color: rgb(95, 133, 190);
-    padding: 1px 10px 0px 10px;
-    border-radius: 10px;
-    
-}
 .logofooter{
    background-color: #fff;
    padding: 5px 5px 5px 10px;
@@ -365,7 +358,7 @@ h5{
    font-family: 'Kanit', sans-serif;
 }
 
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 1023px){
     .pedido button{
         display: none;
     }
@@ -382,7 +375,7 @@ h5{
         height: 45px;
     }
     h1{
-        font-size: 2rem;
+        font-size: 195%;
     }
     .slider{
         display: none;
@@ -391,56 +384,138 @@ h5{
         margin: 1.5rem 0rem 0rem 4.5rem;
     }
     h3{
-        margin: 0;
-        margin-left: 2.5rem;
-        font-size: 20px;
+        margin-left: 12%;
+        font-size: 120%;
         
     }
     #imgApp{
-        margin: 0rem 0rem 0rem 10.5rem;
+        margin: 0rem 0rem 0rem 40.5%;
         
     }
     .botonDescargar{
-        margin: 0rem 0rem 0rem 8.5rem;
+        margin: 0rem 0rem 0rem 32.5%;
         
     }
     .footerOptions{
-        width: 100%;
+        width: 80%;
         display: flex;
+        justify-content: space-between;
     }
     .footerOptions li a{
-        font-size: 10px;
-        padding: 1rem;
+        font-size: 70%;
+        padding: 2%;
     }
     .logofooter{
-        margin: 3rem 0rem 1rem 8.5rem;
+        margin: 11% 0% 4% 32%;
     }
     
 } 
 @media only screen and (min-width: 768px){
+    .burgerIcon{
+        margin-left: 12rem;
+    }
+    h3{
+        margin-left: 25%;
+        font-size: 160%;
+    }
+    #imgApp{
+        margin: 0rem 0rem 0rem 45.5%;
+    }
+    .botonDescargar{
+        margin: 0rem 0rem 0rem 41%;
+        
+    }
+    .footerOptions{
+        width: 90%;
+    }
+    .footerOptions li a{
+        font-size: 85%;
+    }
+    .logofooter{
+        margin: 8% 0% 4% 40%;
+    }
+    .menu__ham__content{
+        
+        margin: 1rem 0rem 0rem 0rem;
+        width: 95.4%;
+        height: 20rem;
+        
+    
+    }
+    .menu__ham__content li{
+        padding: 1.2rem;
+        width: 18rem;
+    }
+    .menu__ham__content a{
+        
+        font-size: 1rem;
+        
+    }
+    .subnav__ham li{
+        width: 10rem;
+        padding: 1.2rem;
+    }
+    .subnav__ham a{
+        font-size: 0.8rem;
+    }
+}
+@media only screen and (max-width: 400px){
+    .burgerIcon{
+        margin-left: 2%;
+    }
+    h3{
+        margin-left: 7%;
+        font-size: 120%;
+    }
+    #imgApp{
+        margin: 0rem 0rem 0rem 40%;
+    }
+    .botonDescargar{
+        margin: 0rem 0rem 0rem 31.5%;
+        
+    }
+    .footerOptions{
+        width: 82%;
+    }
+    .footerOptions li a{
+        font-size: 60%;
+    }
+    .logofooter{
+        margin: 14% 0% 4% 30%;
+    }
+}
+@media only screen and (min-width: 769px){
     .menu__ham{
         display: none;
     }
-    
-    
-}
+    .navbar{
+        margin-left: 31.5%;
+    }
+    .gridHeader{
+        margin: 1.5rem 0rem 0rem 3.5rem;
+    }
 
-@media only screen and (min-width: 600px){
+    
     h3{
-        margin: 1rem 4rem 0rem 7rem;
+        margin-left: 32%;
+        font-size: 180%;
+        
     }
     #imgApp{
-        margin: 3rem 0rem 2rem 11rem;
+        margin: 0rem 0rem 0rem 47%;
+        
     }
     .botonDescargar{
-        margin: 0rem 1rem 0rem 6rem;
+        margin: 0rem 0rem 0rem 44.3%;
+        
+    }
+    .footerOptions{
+        width: 80%;
     }
     .footerOptions li a{
-        font-size: 0.8rem;
-        padding: 0.5rem;
-        margin-left: 1rem;
+        font-size: 90%;
     }
     .logofooter{
-        margin: 0rem 0rem 1rem 74%;
+        margin: 0% 0% 2% 80%;
     }
 }
