@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Local Buzzburg - Hamburgueseria artesanal">
+    <meta name="keywords" content="Hamburguesa, Hamburguesería, Mc’donalds, Burger, Restaurant, Local, Argentina, Comida, Mostaza">
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
     <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap" rel="stylesheet">
@@ -11,65 +13,89 @@
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
-    <title>buzzburg</title>
+    <title>buzzburg - Local</title>
     <link rel="stylesheet" href="./css/local.css">
    
 </head>
 <body>
   <div class="gridContainer">
-      <!--HEADER-->
-  <header class="gridHeader">
-      <div class="burgerIcon">
-        <a href="./index.html"><img src="images/burgericon.png" alt="burgericon"></a>
-      </div> 
-      <h1>buzzburg</h1> 
-      <div class="row">
-      <div class="pedido col-xs-4 col-sm-4 col-md-4 col-lg-4">
-      <button><a href="https://www.pedidosya.com.ar" target="_BLANK">Hacer Pedido</a></button>
-      </div>
-      </div>
-  </header>
+    
+    <!-- MENU HAMBURGUESA-->
+  <div class="menu__ham">
+    <label for="menu" class="menu__label">
+      <img src="./images/bx-menu.svg" class="menu__reg">
+    </label>
+    <input type="checkbox" id="menu" class="menu__input">
+    <div class="menu__ham__content">
+      <ul class="nav__ham">
+        <li><a href="./productos.html">Productos</a></li>
+        <ul class="subnav__ham">
+          <li><a href="./productos.html">Nuestros productos</a></li>
+          <li><a href="./hamburguesas.html">Hamburguesas</a></li>
+          <li><a href="./promociones.html">Promociones</a></li>
+          <li><a href="./postres.html">Postres</a></li>
+        </ul>
+        <li><a href="./nosotros.html">Nosotros</a></li>
+        <li><a href="./local.html">Local</a></li>
+        <li><a href="./ayuda.html">Ayuda</a></li>
+      </ul>
+    </div>
+  </div>
 
-  <!--Comienzo del NAV-->
-  <nav class="navbar navbar-expand-lg navbar-light col-4 p-2">
-      <div class="container-fluid row">
-        <div class="collapse navbar-collapse" id="navbarNav col-xs-4 col-sm-4 col-md-4 col-lg-4">
-          <ul class="navbar-nav">
-            <li class="nav-item1">
-              <a class="nav-link active text-light" aria-current="page" href="./productos.html">Productos</a>
-            </li>
-            <ul class="navbar-subnav row col-lg-6">
+        <!--HEADER-->
+    <header class="gridHeader">
+        <div class="burgerIcon">
+          <a href="./index.html"><img src="images/burgericon.png" alt="burgericon"></a>
+        </div> 
+        <h1>buzzburg</h1> 
+    </header>
+
+    
+
+    
+
+    <!--Comienzo del NAV-->
+    <nav class="navbar navbar-expand-md navbar-light col-4 p-2">
+        <div class="container-fluid row">
+          <div class="collapse navbar-collapse" id="navbarNav col-xs-4 col-sm-4 col-md-4 col-lg-4">
+            <ul class="navbar-nav">
               <li class="nav-item">
-                  <a class="nav-link active text-light" aria-current="page" href="./productos.html">Nuestros Productos</a>
-                </li>
+                <a class="nav-link active text-light" aria-current="page" href="./productos.html">Productos</a>
+              </li>
+              <ul class="navbar-subnav row col-lg-6">
                 <li class="nav-item">
-                  <a class="nav-link active text-light" aria-current="page" href="./hamburguesas.html">Hamburguesas</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link active text-light" aria-current="page" href="./promociones.html">Promociones</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link active text-light" aria-current="page" href="./postres.html">Postres</a>
-                </li>
+                    <a class="nav-link active text-light" aria-current="page" href="./productos.html">Nuestros Productos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active text-light" aria-current="page" href="./hamburguesas.html">Hamburguesas</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active text-light" aria-current="page" href="./promociones.html">Promociones</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active text-light" aria-current="page" href="./postres.html">Postres</a>
+                  </li>
+              </ul>
+              <li class="nav-item">
+                <a class="nav-link active text-light" href="./nosotros.html">Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active text-light" href="./local.html">Local</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active text-light" href="./ayuda.html">Ayuda</a>
+              </li>
             </ul>
-            <li class="nav-item">
-              <a class="nav-link active text-light" href="./nosotros.html">Nosotros</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active text-light" href="./local.html">Local</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active text-light" href="./ayuda.html">Ayuda</a>
-            </li>
-          </ul>
+          </div>
         </div>
-      </div>
-    </nav>
+
+        <div class="row">
+          <div class="pedido col-xs-4 col-sm-4 col-md-4 col-lg-4">
+          <button><a href="https://www.pedidosya.com.ar" target="_BLANK">Hacer Pedido</a></button>
+          </div>
+          </div>
+      </nav>
       
-
-      <hr>
-
-
     <!-- MAIN -->
     <main class="gridMain">
         <section>
@@ -77,8 +103,7 @@
             <h2>¡VEN A VISITARNOS!</h2>
             <div class="pointer">
             <img src="./images/pointer.png" width="20px" height="20px" alt="pointer"></div>
-            <div class="row">
-                <div class="pedido2 col-xs-4 col-sm-4 col-md-4 col-lg-4">
+            <div class="pedido2">
             <button><a href="https://www.google.com/maps/">Encontranos aquí</a></button></div>
         </section>
        
@@ -87,17 +112,10 @@
 
     <!--FOOTER--> 
     <footer class="gridFooter">
-      <div class="row">
-          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
       <h3>DESCARGA NUESTRA APP</h3>
       <img src="images/phone.png" width="100px" alt="phone" id="imgApp">
       <div class="botonDescargar">
       <button><a href="" target="_BLANK">Descargar ahora</a></button></div><br>
-      <div class="marcaLogo">
-      <img src="images/applelogo.png" width="30px" alt="applelogo">
-      <img src="images/androidlogo.png" width="30px" alt="androidlogo">
-      </div>
-      </div>
       <hr>
       <div class="col-xs-6 col-sm-6 col-lg-6">
       <ul class="footerOptions">
@@ -116,6 +134,5 @@
       </div>
 
   </footer>
-  </div>
 </body>
 </html>
