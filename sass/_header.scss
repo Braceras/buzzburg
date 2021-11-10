@@ -1,11 +1,10 @@
 /* HEADER */
 .gridHeader{
     padding: 1rem;
-
     .burgerIcon{
         padding: 5px 5px 5px 10px;
         background-color: #fff;
-        border-radius: 20px;
+        border-radius: 1.2rem;
         width: 70px;
         height: 70px;
         float: left;
@@ -18,40 +17,97 @@
     .burgerIcon img{
         width: 50px;
         height: 60px;
-        transition: all 1s ease;
+        transition: all 0.88s ease;
         &:hover{
             transform: rotate(360deg) 
         }
     }
+    
     h1{
         color: #fff;
         display: inline-block;
-        padding: 16px 0px 10px 0px;
-        margin-left: 0.6%;
-        
+        padding: 1rem 0rem 1rem 0rem;
+        margin-left: 0.4%;
+        font-size: 2.5rem;
     }
     .pedido{
-        margin-left: 53%;
+        margin-left: 80%;
         display: inline-block;
-        border-radius: 10px;
+        border-radius: 2rem;
+        width: 0;
     }
-    .pedido button{
-        background-color: #fff;
-        display: inline-block;
-        width: 130px;
-        height: 45px;
-        border-radius: 10px;
-        text-align: center;
-        border: none;
-        &:hover{
-            background-image: linear-gradient(to right, rgb(255, 208, 1), #Fff);
-        }
-    }
-    .pedido a{
-        display: inline-block;
-        text-decoration: none;
-        color: #000;
+    .menu__ham{
+        display: block;
+        border-style: solid;
+        border-color: #fff;
+        border-radius: 0.6rem;
+        height: 100%;
+        width: 3.2rem;
+        margin: 1rem 0rem 0rem 0.9rem;
+        align-items: center;
         
     }
+    .menu__reg{
+        width: 2rem;
+        height: 2.3rem;
+        margin-left: 0.4rem;
+    }
 
+    .menu__input, .menu__label{
+        display: none;
+    }
+    .menu__label{
+        display: block;
+        cursor: pointer;
+    }
+    .menu__ham__content{
+        display: grid;
+        grid-auto-flow: column;
+        gap: 3em;
+        position: absolute;
+        margin: 1rem 0rem 0rem 0rem;
+        width: 91%;
+        height: 17.78rem;
+        background-color: #000;
+        border-radius: 2rem;
+        border-style: solid;
+        border-color: #fff;
+        clip-path: polygon(0 0, 0 0, 0 0, 0 0);
+        transition: all 0.3s ease;
+    }
+    .menu__input:checked+.menu__ham__content{
+        clip-path: polygon(100% 0, 0 0, 0 100%, 100% 100%);
+    }
+
+    .menu__ham__content li{
+        list-style: none;
+        padding: 1rem;
+        border-radius: 2rem;
+        width: 18rem;
+        &:hover{
+            background-color: #262626;
+        }
+    }
+    .menu__ham__content a{
+        color: #Fff;
+        text-decoration: none;
+        font-size: 0.9rem;
+        
+    }
+    .subnav__ham{
+        display: flex;
+        margin: 0;
+        padding: 0;
+    }
+
+    .subnav__ham li{
+        width: 4.5rem;
+        text-align: center;
+        padding: 0.2rem;
+    }
+    .subnav__ham a{
+        font-size: 0.5rem;
+    }
 }    
+
+

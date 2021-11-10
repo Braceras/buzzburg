@@ -45,7 +45,176 @@ section{
         margin-left: 620px;
     }
 }
-
-
-
-
+@media only screen and (max-width: 1023px){
+    .pedido button{
+        display: none;
+    }
+    .navbar{
+        display: none;
+    }
+    .burgerIcon{
+        width: 55px;
+        height: 55px;
+        margin-left: 1.5rem;
+    }
+    .burgerIcon img{
+        width: 35px;
+        height: 45px;
+    }
+    h1{
+        font-size: 195%;
+    }
+    .slider{
+        display: none;
+    }
+    .gridHeader{
+        margin: 1.5rem 0rem 0rem 4.5rem;
+    }
+    .pedido2{
+        margin: 1rem 0rem 1rem 32%;
+        
+        
+    }
+    h3{
+        margin-left: 12%;
+        font-size: 120%;
+        
+    }
+    #imgApp{
+        margin: 0rem 0rem 0rem 40.5%;
+        
+    }
+    .botonDescargar{
+        margin: 0rem 0rem 0rem 32.5%;
+        
+    }
+    .footerOptions{
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .footerOptions li a{
+        font-size: 70%;
+        padding: 2%;
+    }
+    .logofooter{
+        margin: 11% 0% 4% 32%;
+    }
+    
+} 
+@media only screen and (min-width: 768px){
+    .burgerIcon{
+        margin-left: 12rem;
+    }
+    .pedido2{
+        margin: 1rem 0rem 1rem 40%;
+        
+    }
+    h3{
+        margin-left: 25%;
+        font-size: 160%;
+    }
+    #imgApp{
+        margin: 0rem 0rem 0rem 45.5%;
+    }
+    .botonDescargar{
+        margin: 0rem 0rem 0rem 41%;
+        
+    }
+    .footerOptions{
+        width: 90%;
+    }
+    .footerOptions li a{
+        font-size: 85%;
+    }
+    .logofooter{
+        margin: 8% 0% 4% 40%;
+    }
+    .menu__ham__content{
+        
+        margin: 1rem 0rem 0rem 0rem;
+        width: 95.4%;
+        height: 20rem;
+        
+    
+    }
+    .menu__ham__content li{
+        padding: 1.2rem;
+        width: 18rem;
+    }
+    .menu__ham__content a{
+        
+        font-size: 1rem;
+        
+    }
+    .subnav__ham li{
+        width: 10rem;
+        padding: 1.2rem;
+    }
+    .subnav__ham a{
+        font-size: 0.8rem;
+    }
+}
+@media only screen and (max-width: 400px){
+    .burgerIcon{
+        margin-left: 2%;
+    }
+    h3{
+        margin-left: 7%;
+        font-size: 120%;
+    }
+    #imgApp{
+        margin: 0rem 0rem 0rem 40%;
+    }
+    .botonDescargar{
+        margin: 0rem 0rem 0rem 31.5%;
+        
+    }
+    .footerOptions{
+        width: 82%;
+    }
+    .footerOptions li a{
+        font-size: 60%;
+    }
+    .logofooter{
+        margin: 14% 0% 4% 30%;
+    }
+}
+@media only screen and (min-width: 769px){
+    .menu__ham{
+        display: none;
+    }
+    .navbar{
+        margin-left: 31.5%;
+    }
+    .gridHeader{
+        margin: 1.5rem 0rem 0rem 3.5rem;
+    }
+    .pedido2{
+        margin: 1rem 0rem 1rem 43.5%;
+        
+    }
+    
+    h3{
+        margin-left: 32%;
+        font-size: 180%;
+        
+    }
+    #imgApp{
+        margin: 0rem 0rem 0rem 47%;
+        
+    }
+    .botonDescargar{
+        margin: 0rem 0rem 0rem 44.3%;
+        
+    }
+    .footerOptions{
+        width: 80%;
+    }
+    .footerOptions li a{
+        font-size: 90%;
+    }
+    .logofooter{
+        margin: 0% 0% 2% 80%;
+    }
+}
