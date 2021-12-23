@@ -19,7 +19,7 @@ class Usuario{
 
         localStorage.setItem(telIngresado, JSON.stringify(newRegistro))
 
-        alert("Información recivida con éxito");
+        alert("Información enviada con éxito");
 
     }
 
@@ -43,7 +43,7 @@ function enviarInfo()
     const miUsuario = new Usuario("","","","");
     miUsuario.guardar(nombres, apellidos, email, telefono, ciudad);
 
-    alert("SU REGISTRO HA SIDO EXISTOSO");
+    alert("INFORMACIÓN ENVIADA DE FORMA EXISTOSA");
     
     window.location.href='contacto.html';
     
