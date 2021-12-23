@@ -1,25 +1,25 @@
 
 class Usuario{
-    constructor(nombres , apellidos, email, telefono, ciudad, mensaje)
+    constructor(nombres , apellidos, email, telefono, ciudad)
     {
         this.nombres = nombres;
         this.apellidos = apellidos;
         this.email = email;
         this.telefono = telefono;
         this.ciudad = ciudad;
-        this.mensaje = mensaje;
+        
     
     }
 
-    guardar(nombreIngresado,apellidoIngresado,emailIngresado,telIngresado, locIngresado, mensajeIngresado)
+    guardar(nombreIngresado,apellidoIngresado,emailIngresado,telIngresado, locIngresado)
     {
        
-        const newRegistro = new Usuario(nombreIngresado, apellidoIngresado, emailIngresado, telIngresado, locIngresado, mensajeIngresado);
+        const newRegistro = new Usuario(nombreIngresado, apellidoIngresado, emailIngresado, telIngresado, locIngresado);
 
 
         localStorage.setItem(telIngresado, JSON.stringify(newRegistro))
 
-        alert("Registro realizado correctamente");
+        alert("Información recivida con éxito");
 
     }
 
@@ -31,9 +31,7 @@ class Usuario{
 
 
 
-
-
-function realizarContacto() 
+function enviarInfo() 
 {
 
     const nombres = document.getElementById("nombres").value;
@@ -41,18 +39,15 @@ function realizarContacto()
     const email = document.getElementById("email").value;
     const telefono = document.getElementById("telefono").value;
     const ciudad = document.getElementById("ciudad").value;
-    const mensaje = document.getElementById("mensaje").value;
 
     const miUsuario = new Usuario("","","","");
-    miUsuario.guardar(nombres, apellidos, email, telefono, ciudad, mensaje);
+    miUsuario.guardar(nombres, apellidos, email, telefono, ciudad);
 
     alert("SU REGISTRO HA SIDO EXISTOSO");
     
     window.location.href='contacto.html';
     
 }
-
-
 
 
 

@@ -107,23 +107,23 @@
                 <legend>Completa el formulario con tus datos</legend>
                 <div>
                     <label for="name">*Nombres</label>
-                    <input type="text" name="nombres" required>
+                    <input type="text" name="nombres" id="nombres" required>
                 </div>
                 <div>
                     <label for="apellidos">*Apellidos</label>
-                    <input type="text" name="apellidos" required>
+                    <input type="text" name="apellidos" id="apellidos" required>
                 </div>
                 <div>
                     <label for="email">*E-mail</label>
-                    <input type="email" required>
+                    <input type="email" id="email" required>
                 </div>
                 <div>
                     <label for="telefono">Teléfono</label>
-                    <input type="text" required>
+                    <input type="text" id="telefono" required>
                 </div>
                 <div>
                     <label for="ciudad">Ciudad</label>
-                    <input type="text" name="ciudad" required>
+                    <input type="text" name="ciudad" id="ciudad" required>
                 </div>
                 <div>
                     <label for="asunto" class="asunto">Asunto</label>
@@ -143,8 +143,12 @@
                     <textarea name="comentario" id="mensaje" cols="25" rows="1"></textarea>
 
                 </div>
+                <!--
                 <div>
-                    <input type="submit" value="Enviar" class="boton">
+                  <button onClick="enviarIfno()" >Enviar</button>
+                </div> -->
+                <div>
+                    <input type="submit" value="Enviar" class="boton" onclick="enviarInfo()"> 
                     <input type="reset" value="Borrar Formulario" class="boton">
                 </div>
             </form>
