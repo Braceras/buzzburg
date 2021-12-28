@@ -58,10 +58,10 @@ function printUsuariosRegistrados()
         const llave = localStorage.key(i);
         const dato = JSON.parse(localStorage(llave));
         
-        const plantillaUsuario = `<p class="usuario">La cédula de: ${dato.nombre+" "+dato.apellido} es <i>${dato.documento}</i></p>` 
+        const plantillaUsuario = `<p class="usuario">El telefono de: ${dato.nombres+" "+dato.apellidos} es <i>${dato.telefono}</i></p>` 
 
         const nodoParaLista = document.getElementById("listaUsuarios");
         nodoParaLista.innerHTML+=plantillaUsuario;
         
     }
-}
+} 
