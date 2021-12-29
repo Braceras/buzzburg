@@ -19,7 +19,6 @@ class Usuario{
 
         localStorage.setItem(telIngresado, JSON.stringify(newRegistro))
 
-        alert("Información enviada con éxito");
 
     }
 
@@ -51,9 +50,26 @@ function enviarInfo()
 
 
 
+const botonEvent = document.getElementById("botonSub")
+
+botonEvent.onmouseover = () => {
+    botonEvent.style.backgroundColor="black";
+    botonEvent.style.color="white";
+    botonEvent.style.borderColor="white";
+
+}
+
+botonEvent.onmouseout = () => {
+    botonEvent.style.backgroundColor="white";
+    botonEvent.style.color="black";
+}
+
+
+
+
 function printUsuariosRegistrados()
 {
-    for(let i=0; i<localStorage.length;i++)
+    for(let i=0; i<localStorage.length; i++)
     {
         const llave = localStorage.key(i);
         const dato = JSON.parse(localStorage(llave));
@@ -65,3 +81,9 @@ function printUsuariosRegistrados()
         
     }
 } 
+
+
+
+
+
+

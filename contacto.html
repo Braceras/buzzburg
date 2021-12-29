@@ -144,17 +144,16 @@
 
                 </div> 
                 <div>
-                    <input type="submit" value="Enviar" class="boton" onclick="enviarInfo()"> 
+                    <input type="submit" value="Enviar" class="boton" id="botonSub" onclick="enviarInfo()"> 
                     <input type="reset" value="Borrar Formulario" class="boton">
                 </div>
             </form>
-            <hr>
+
             <div id="listaUsuarios">
 
             </div>
 
         </section>
-        <hr>
 
     </main>
 
@@ -186,17 +185,14 @@
 </html>
 
 <script>
-  printUsuariosRegistrados();
+printUsuariosRegistrados()
+const numero = localStorage.length
 
-  const numero = localStorage.length
 
+    const miPlantilla = `<p>Esto es una plantilla </p>
+                 <p>Para mostrar el número de usuarios </p>
+                 <p>El número de usuarios registrados es <b>${numero}</b> </p>`
 
-  const miPlantilla = `<p>Esto es una plantilla </p>
-                       <p>Para mostrar el número de usuarios </p>
-                       <p>El número de usuarios registrados es <b>${numero}</b> </p>`
-
-  document.getElementById("numeroDeUsuarios").innerHTML=miPlantilla;
-  
-
+    document.getElementById("listaUsuarios").innerHTML=miPlantilla;
 
 </script>
