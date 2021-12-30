@@ -49,37 +49,22 @@ function enviarInfo()
 }
 
 
-
-const botonEvent = document.getElementById("botonSub")
-
-botonEvent.onmouseover = () => {
-    botonEvent.style.backgroundColor="black";
-    botonEvent.style.color="white";
-    botonEvent.style.borderColor="white";
-
-}
-
-botonEvent.onmouseout = () => {
-    botonEvent.style.backgroundColor="white";
-    botonEvent.style.color="black";
-}
-
-
-
-
 function printUsuariosRegistrados()
 {
+    let i=0;
+    
     for(let i=0; i<localStorage.length; i++)
     {
         const llave = localStorage.key(i);
-        const dato = JSON.parse(localStorage(llave));
+        const dato = JSON.parse(localStorage.getItem(llave));
         
         const plantillaUsuario = `<p class="usuario">El telefono de: ${dato.nombres+" "+dato.apellidos} es <i>${dato.telefono}</i></p>` 
 
-        const nodoParaLista = document.getElementById("listaUsuarios");
-        nodoParaLista.innerHTML+=plantillaUsuario;
+        document.getElementById("listaUsuarios").innerHTML=plantillaUsuario;
         
     }
+
+    
 } 
 
 

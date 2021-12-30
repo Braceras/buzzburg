@@ -181,18 +181,23 @@
     </div>
 
 </footer>
+
+<script>
+
+  printUsuariosRegistrados()
+  const numero = localStorage.length
+  
+  
+      const miPlantilla = `
+                   <p>El número de usuarios registrados es <b>${numero}</b> </p>`
+  
+      document.getElementById("listaUsuarios").innerHTML=miPlantilla;
+
+      
+  
+  </script>
+
+
 </body>
 </html>
 
-<script>
-printUsuariosRegistrados()
-const numero = localStorage.length
-
-
-    const miPlantilla = `<p>Esto es una plantilla </p>
-                 <p>Para mostrar el número de usuarios </p>
-                 <p>El número de usuarios registrados es <b>${numero}</b> </p>`
-
-    document.getElementById("listaUsuarios").innerHTML=miPlantilla;
-
-</script>
