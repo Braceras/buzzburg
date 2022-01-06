@@ -1,33 +1,5 @@
-/*
-class Informacion{
-    constructor(nombre, direccion, paga, telefono)
-    {
-        this.nombre = nombre;
-        this.direccion = direccion;
-        this.paga = paga;
-        this.telefono = telefono;
-    }
-
-    infoCliente(nombreIngresado, direccionIngresada, pagaIngresada, telefonoIngresado)
-    {
-        const cliente = new Informacion(nombreIngresado, direccionIngresada, pagaIngresada, telefonoIngresado);
-
-        localStorage.setItem(direccionIngresada, JSON.stringify(cliente));
-
-
-    }
-} */
-
-
 // Buzzburg
 // Menú Buzzburg
-
-
-
-function init()
-{
-
-}
 
 
 function agregarPedidoHam1()
@@ -88,3 +60,107 @@ function agregarPedidoHam6()
     JSON.stringify(smokeBuzz);
 } 
 
+
+
+function actualizarCarrito()
+{
+    const nodoCarrito = document.getElementById("carrito")
+    nodoCarrito.innerHTML="";
+    const productos = carrito.productos;
+
+    let contador = 0;
+    while(contador<productos.length){
+
+        let producto = productos[contador];
+
+        let item = document.createElement("div");
+        item.innerHTML=`<hr><div><h3>${hamburguesas.nombre}</h3></div>
+                        <div>$${hamburguesas.precio}</div>`;
+
+        nodoCarrito.appendChild(item);
+
+        let botonQuitar = document.createElement("button");
+        botonQuitar.innerHTML="Eliminar del carrito";
+        botonQuitar.onclick=() =>
+        {
+            if(confirm("Seguro desea quitar este elemento?")){
+                carrito.quitarProducto(producto);
+                actualizarCarrito();
+            }
+        }
+
+        nodoCarrito.appendChild(botonQuitar);
+
+        contador++;
+    }
+
+    const nodoContendorTotal = document.createElement("div");
+    nodoContendorTotal.appendChild(document.createElement("hr"));
+    const total = carrito.totalizar();
+
+    const nodoTotal = document.createElement("div");
+    nodoTotal.innerHTML=total;
+    
+    nodoContendorTotal.appendChild(nodoTotal);
+    nodoCarrito.appendChild(nodoContendorTotal);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+class Informacion{
+    constructor(nombre, direccion, paga, telefono)
+    {
+        this.nombre = nombre;
+        this.direccion = direccion;
+        this.paga = paga;
+        this.telefono = telefono;
+    }
+
+    infoCliente(nombreIngresado, direccionIngresada, pagaIngresada, telefonoIngresado)
+    {
+        const cliente = new Informacion(nombreIngresado, direccionIngresada, pagaIngresada, telefonoIngresado);
+
+        localStorage.setItem(direccionIngresada, JSON.stringify(cliente));
+
+
+    }
+} */

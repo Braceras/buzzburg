@@ -123,7 +123,51 @@ h1{
 }
 
 
+/*Carrito*/
+.carrito{
+    display: block;
+    border-style: solid;
+    border-color: #000;
+    border-radius: 0.6rem;
+    height: 3rem;
+    width: 3.2rem;
+    margin: 1rem 0rem 0rem 0.9rem;
+    align-items: center;
+    position: fixed;
+    
+}
+.carrito__reg{
+    width: 2rem;
+    height: 2.3rem;
+    margin-left: 0.4rem;
+}
+.carrito__input, .carrito__label{
+    display: none;
+}
+.carrito__label{
+    display: block;
+    cursor: pointer;
+}
+.carrito__ham__content{
+    display: grid;
+    grid-auto-flow: column;
+    gap: 3em;
+    position: absolute;
+    margin: 1rem 0rem 0rem 0rem;
+    width: 91%;
+    height: 17.78rem;
+    background-color: #000;
+    border-radius: 2rem;
+    border-style: solid;
+    border-color: #fff;
+    clip-path: polygon(0 0, 0 0, 0 0, 0 0);
+    transition: all 0.3s ease;
+    
 
+}
+.carrito__input:checked+.carrito__ham__content{
+    clip-path: polygon(100% 0, 0 0, 0 100%, 100% 100%);
+}
 
 
 
@@ -153,42 +197,31 @@ h1{
     border-radius: 0.7rem;
 }
 
-.ham1{
-    background-image: url(../images/fotoSlider6.jpg);
+.hamburguesas{
+
     margin-bottom: 2rem;
-    border-radius: 1rem;
-    border: solid orange;
-}
-.ham2{
-    background-image: url(../images/fotoSlider4.jpg);
-    margin-bottom: 2rem;
-    border-radius: 1rem;
-    border: solid orange;
-}
-.ham3{
-    background-image: url(../images/chilibur2.jpg);
-    margin-bottom: 2rem;
-    border-radius: 1rem;
-    border: solid orange;
-}
-.ham4{
-    background-image: url(../images/butterburger2.jpg);
-    margin-bottom: 2rem;
-    border-radius: 1rem;
-    border: solid orange;
-}
-.ham5{
-    background-image: url(../images/double__double.jpg);
-    margin-bottom: 2rem;
-    border-radius: 1rem;
-    border: solid orange;
-}
-.ham6{
-    background-image: url(../images/smokebuzz2.jpg);
     border-radius: 1rem;
     border: solid orange;
 }
 
+.ham1{
+    background-image: url(../images/fotoSlider6.jpg);
+}
+.ham2{
+    background-image: url(../images/fotoSlider4.jpg);
+}
+.ham3{
+    background-image: url(../images/chilibur2.jpg);
+}
+.ham4{
+    background-image: url(../images/butterburger2.jpg);
+}
+.ham5{
+    background-image: url(../images/double__double.jpg);
+}
+.ham6{
+    background-image: url(../images/smokebuzz2.jpg);
+}
 
 
 /* FOOTER */
