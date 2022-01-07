@@ -11,7 +11,7 @@ function agregarPedidoHam1()
 
     JSON.stringify(buzzburger);
 
-
+    actualizarCarrito();
 
 }
 function agregarPedidoHam2() 
@@ -22,6 +22,7 @@ function agregarPedidoHam2()
     alert("SU ORDEN ES: "+cheeseburger.nombre+ " $"+cheeseburger.precio);
 
     JSON.stringify(cheeseburger);
+    actualizarCarrito();
 }
 function agregarPedidoHam3()
 {
@@ -31,6 +32,7 @@ function agregarPedidoHam3()
     alert("SU ORDEN ES: "+chiliBuzzburger.nombre+ " $"+chiliBuzzburger.precio);
 
     JSON.stringify(chiliBuzzburger);
+    actualizarCarrito();
 }
 function agregarPedidoHam4()
 {
@@ -40,6 +42,7 @@ function agregarPedidoHam4()
     alert("SU ORDEN ES: "+butterBuzzburger.nombre+ " $"+butterBuzzburger.precio);
 
     JSON.stringify(butterBuzzburger);
+    actualizarCarrito();
 }
 function agregarPedidoHam5()
 {
@@ -49,6 +52,7 @@ function agregarPedidoHam5()
     alert("SU ORDEN ES: "+doubleBuzzburger.nombre+ " $"+doubleBuzzburger.precio);
 
     JSON.stringify(doubleBuzzburger);
+    actualizarCarrito();
 }
 function agregarPedidoHam6()
 {
@@ -58,51 +62,29 @@ function agregarPedidoHam6()
     alert("SU ORDEN ES: "+smokeBuzz.nombre+ " $"+smokeBuzz.precio);
 
     JSON.stringify(smokeBuzz);
+    actualizarCarrito();
 } 
 
 
 
 function actualizarCarrito()
 {
-    const nodoCarrito = document.getElementById("carrito")
+    const nodoCarrito = document.getElementById("carrito");
     nodoCarrito.innerHTML="";
-    const productos = carrito.productos;
+    const hamburguesas = carrito.productos;
 
-    let contador = 0;
-    while(contador<productos.length){
-
-        let producto = productos[contador];
+    let i=0;
+    for(i=0;i<hamburguesas.length;i++)
+    {
+        let hamburguesa = hamburguesas[i];
 
         let item = document.createElement("div");
-        item.innerHTML=`<hr><div><h3>${hamburguesas.nombre}</h3></div>
-                        <div>$${hamburguesas.precio}</div>`;
+        item.innerHTML=`<hr><div><h3>${hamburguesa.nombre}</h3></div>
+                        <div>$${hamburguesa.precio}</div>`;
 
         nodoCarrito.appendChild(item);
 
-        let botonQuitar = document.createElement("button");
-        botonQuitar.innerHTML="Eliminar del carrito";
-        botonQuitar.onclick=() =>
-        {
-            if(confirm("Seguro desea quitar este elemento?")){
-                carrito.quitarProducto(producto);
-                actualizarCarrito();
-            }
-        }
-
-        nodoCarrito.appendChild(botonQuitar);
-
-        contador++;
     }
-
-    const nodoContendorTotal = document.createElement("div");
-    nodoContendorTotal.appendChild(document.createElement("hr"));
-    const total = carrito.totalizar();
-
-    const nodoTotal = document.createElement("div");
-    nodoTotal.innerHTML=total;
-    
-    nodoContendorTotal.appendChild(nodoTotal);
-    nodoCarrito.appendChild(nodoContendorTotal);
 }
 
 

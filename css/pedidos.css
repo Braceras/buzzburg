@@ -90,7 +90,7 @@ h1{
 
 }
 .menu__input:checked+.menu__ham__content{
-    clip-path: polygon(100% 0, 0 0, 0 100%, 100% 100%);
+    clip-path: polygon(100% 0, 0 100%, 100% 100%);
 }
 .menu__ham__content li{
     list-style: none;
@@ -127,11 +127,11 @@ h1{
 .carrito{
     display: block;
     border-style: solid;
-    border-color: #000;
+    border-color: #fff;
     border-radius: 0.6rem;
     height: 3rem;
     width: 3.2rem;
-    margin: 1rem 0rem 0rem 0.9rem;
+    margin: 0rem 0rem 0rem 65%;
     align-items: center;
     position: fixed;
     
@@ -206,21 +206,33 @@ h1{
 
 .ham1{
     background-image: url(../images/fotoSlider6.jpg);
+    border-radius: 1rem;
+    margin: 0rem 0rem 1rem 0rem;
 }
 .ham2{
     background-image: url(../images/fotoSlider4.jpg);
+    border-radius: 1rem;
+    margin: 0rem 0rem 1rem 0rem;
 }
 .ham3{
     background-image: url(../images/chilibur2.jpg);
+    border-radius: 1rem;
+    margin: 0rem 0rem 1rem 0rem;
 }
 .ham4{
     background-image: url(../images/butterburger2.jpg);
+    border-radius: 1rem;
+    margin: 0rem 0rem 1rem 0rem;
 }
 .ham5{
     background-image: url(../images/double__double.jpg);
+    border-radius: 1rem;
+    margin: 0rem 0rem 1rem 0rem;
 }
 .ham6{
     background-image: url(../images/smokebuzz2.jpg);
+    border-radius: 1rem;
+
 }
 
 
