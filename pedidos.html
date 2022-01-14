@@ -15,11 +15,6 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
     <title>buzzburg</title>
     <link rel="stylesheet" href="./css/pedidos.css">
-
-    <script language="javascript" src="./class.js/carrito.class.js"></script>
-    <script language="javascript" src="./data.js/hamburguesas.data.js"></script>
-    <script language="javascript" src="./class.js/hamburguesa.class.js"></script>
-    <script language="javascript" src="./js/pedidos.js"></script>
    
 </head>
 <body>
@@ -31,17 +26,18 @@
         </div> 
         <h1>buzzburg</h1> 
 
-        <!--Carrito-->
+
         <div class="carrito">
             <label for="carrito" class="carrito__label">
               <img src="./images/bx-menu.svg" class="carrito__reg">
             </label>
             <input type="checkbox" id="carrito" class="carrito__input">
 
-            <div class="carrito__ham__content" id="carrito"> 
+            <div class="carrito__ham__content"> 
 
               
             </div>
+        
         </div>
 
     </header>
@@ -52,43 +48,16 @@
 
     
     <main class="mainClass">
-          
 
-            <div class="ham1" id="ham1">
-                <h3>Buzzburger</h3>
-                <p>Hamburguesa sencilla o doble con queso, lechuga, jitomate y BuzzSauce.</p>
-                <button class="miPedidoBTN" id="miPedidoHam1" onclick="agregarPedidoHam1()">Agregar a mi pedido</button>
-            </div>
-            <div class="ham2" id="ham2">
-                
-                <h3>Cheeseburger</h3>
-                <p>Sencilla o doble, elige lechuga, jitomate, pepinillos o cebolla. Agrega queso o tocino ahumado</p>
-                <button class="miPedidoBTN" id="miPedidoHam2" onclick="agregarPedidoHam2()">Agregar a mi pedido</button>
-            </div>
-            <div class="ham3" id="ham3">
-                
-                <h3>Chili Buzzburger</h3>
-                <p>Hamburguesa sencilla o doble con queso, pickles, BuzzSauce, mayonesa y chile picante.</p>
-                <button class="miPedidoBTN" id="miPedidoHam3" onclick="agregarPedidoHam3()">Agregar a mi pedido</button>
-            </div>
-            <div class="ham4" id="ham4">
-                
-                <h3>Butter Buzzburger</h3>
-                <p>Hamburguesa sencilla o doble con queso, cebolla reahogada en manteca y fondo de carne, manteca.</p>
-                <button class="miPedidoBTN" id="miPedidoHam4" onclick="agregarPedidoHam4()">Agregar a mi pedido</button>
-            </div>
-            <div class="ham5" id="ham5">
-             
-             <h3>Double-Double Buzzburger</h3> 
-             <p>Hanburguesa doble con lonja de cebolla, lechuga, tomate, queso y BuzzSauce. </p>
-             <button class="miPedidoBTN" id="miPedidoHam5" onclick="agregarPedidoHam5()">Agregar a mi pedido</button>
-            </div>
-            <div class="ham6" id="ham6">
-                
-                <h3>Smoke Buzz</h3>
-                <p>Hamburguesa sencilla o doble con bacon, aji brunoise, queso y BuzzSauce</p> 
-                <button class="miPedidoBTN" id="miPedidoHam6" onclick="agregarPedidoHam6()">Agregar a mi pedido</button>
-            </div>
+        
+          
+        <div class="categorias" id="categorias">
+
+        </div>
+        
+        <div class="productos" id="productos">
+
+        </div>
             
         
     </main>
@@ -119,5 +88,26 @@
         </div>
 
     </footer>
+
+
+    <script language="javascript" src="./class.js/carrito.class.js"></script>
+    <script language="javascript" src="./class.js/categoria.class.js"></script>
+    <script language="javascript" src="./class.js/producto.class.js"></script>
+    <script language="javascript" src="./data.js/categorias.data.js"></script>
+    <script language="javascript" src="./data.js/productos.data.js"></script>
+    <script language="javascript" src="./js/pedidos.js"></script> 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script> 
+
+
+
 </body>
 </html>
+
+<script language="javascript">
+
+    $(()=>{ init();})
+</script>
+
+
+
+
