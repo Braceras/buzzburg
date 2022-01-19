@@ -26,17 +26,12 @@
         </div> 
         <h1>buzzburg</h1> 
 
-
-        <div class="carrito">
-            <label for="carrito" class="carrito__label">
-              <img src="./images/bx-menu.svg" class="carrito__reg">
-            </label>
-            <input type="checkbox" id="carrito" class="carrito__input">
-
-            <div class="carrito__ham__content"> 
-
-              
-            </div>
+        <div class="carrito-container">
+            <a href="#modal" rel="modal:open">
+                <img src="./images/bx-menu.svg"  alt="carrito icono">
+            </a>
+        </div>
+        
         
         </div>
 
@@ -48,18 +43,12 @@
 
     
     <main class="mainClass">
-
-        
-          
         <div class="categorias" id="categorias">
 
         </div>
-        
         <div class="productos" id="productos">
 
         </div>
-            
-        
     </main>
 
 
@@ -89,24 +78,70 @@
 
     </footer>
 
+    <!-- Sweer Alert -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11" defer></script>
 
-    <script language="javascript" src="./class.js/carrito.class.js"></script>
-    <script language="javascript" src="./class.js/categoria.class.js"></script>
-    <script language="javascript" src="./class.js/producto.class.js"></script>
-    <script language="javascript" src="./data.js/categorias.data.js"></script>
-    <script language="javascript" src="./data.js/productos.data.js"></script>
-    <script language="javascript" src="./js/pedidos.js"></script> 
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script> 
+    <!-- Remember to include jQuery :) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+
+    <!-- jQuery Modal -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+
+
+    <script language="javascript" src="./js/pedidos.js" defer></script> 
 
 
 
 </body>
+
+    <div id="modal" class="modal">
+        <h3>Tu pedido</h3>
+        <table>
+            <tbody id="carrito">
+                <tr>
+                    <td class="header">Nombre</td>
+                    <td class="header">Precio</td>
+                </tr>
+            </tbody>
+        </table>
+
+        
+
+    </div>
+
+
+
+
 </html>
 
+
+<!--
 <script language="javascript">
 
     $(()=>{ init();})
-</script>
+</script>--> 
+
+
+
+<!--
+<script language="javascript" src="./class.js/carrito.class.js"></script>
+<script language="javascript" src="./class.js/categoria.class.js"></script>
+<script language="javascript" src="./class.js/producto.class.js"></script>
+<script language="javascript" src="./data.js/categorias.data.js"></script>
+<script language="javascript" src="./data.js/productos.data.js"></script>-->
+
+<!--
+<div class="carrito-container">
+    <label for="carrito" class="carrito__label">
+      <img src="./images/bx-menu.svg" class="carrito__reg">
+    </label>
+    <input type="checkbox" id="carrito" class="carrito__input">
+
+    <div class="carrito__ham__content"> 
+
+      
+    </div>-->
 
 
 

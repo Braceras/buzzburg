@@ -1,0 +1,52 @@
+{
+    "products": [
+        {
+            "id": 1,
+            "nombre": "Buzzburger",
+            "img": "../images/fotoSlider5.jpg",
+            "orden": "Hamburguesa doble o sencilla con cheddar, lechuga, jitomate y BuzzSauce",
+            "adicionales": false, 
+            "precio": 600
+        },
+        {
+            "id": 2,
+            "nombre": "Cheeseburger",
+            "img": "../images/fotoSlider4.jpg",
+            "orden": "Hamburguesa doble o sencilla con cheddar y BuzzSauce",
+            "adicionales": false, 
+            "precio": 500
+        },
+        {
+            "id": 3,
+            "nombre": "Chili Buzzburger",
+            "img": "../images/chilibur2.jpg",
+            "orden": "Hamburguesa doble o sencilla con cheddar, chile picante, pickles y mostaza suave",
+            "adicionales": false, 
+            "precio": 700
+        },
+        {
+            "id": 4,
+            "nombre": "Butter Buzzburger",
+            "img": "../images/butterburger2.jpg",
+            "orden": "Hamburguesa doble o sencilla con cheddar, cebolla reahogada en fondo de carne y manteca",
+            "adicionales": false, 
+            "precio": 600
+        },
+        {
+            "id": 5,
+            "nombre": "Double-Double Buzzburger",
+            "img": "../images/double__double.jpg",
+            "orden": "Hamburguesa doble o sencilla con cheddar, lechuga, tomate, lonja de cebolla y BuzzSauce",
+            "adicionales": false, 
+            "precio": 600
+        },
+        {
+            "id": 6,
+            "nombre": "Smoke Buzz",
+            "img": "../images/smokebuzz2.jpg",
+            "orden": "Hamburguesa doble o sencilla con cheddar, aji y BuzzSauce",
+            "adicionales": "bacon", 
+            "precio": 600
+        }
+    ]
+}

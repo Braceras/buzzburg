@@ -1,7 +1,154 @@
 //Buzzburg
 //Menu Buzzburg
 
+$(()=> {
+    
+    obtenerProductos();
+    imprimirCarrito(carrito);
+});
 
+let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
+
+let productos;
+
+
+
+function mostrarTitulo(){
+
+    $(".mainClass").append(
+        `<div>
+        <h3>Realiza tu pedido en Buzzburg</h3>
+        </div>`
+    );
+    
+}
+
+
+
+function obtenerProductos(){
+    $.get("../data/productos.json", (respuesta, estado) => {
+        productos = respuesta.products
+        imprimirProductos(productos);
+    })
+        
+    
+    
+}
+
+
+
+
+function imprimirProductos(array){
+    
+    
+    array.forEach((prod) => {
+        $("#productos").append(
+            `   <div class="burbuja">
+                <img src = ${prod.img} />
+                <h4>${prod.nombre}</h4>
+                <p>${prod.orden}</p>
+                <p>Precio: $${prod.precio}</p>
+                <button id="${prod.id}" onclick="agregarAlCarrito(event)">Agregar a mi pedido</button></div>`
+        );
+    });
+    
+    
+}
+
+
+function agregarAlCarrito(e){
+    
+    let id = Number(e.target.id);
+    let productoElegido = productos.find((p) => p.id === id);
+    
+    carrito.push(productoElegido);
+
+    localStorage.setItem("carrito", JSON.stringify(carrito));
+
+    imprimirCarrito(carrito);
+}
+
+function imprimirCarrito(array){
+    $("#carrito").empty();
+    let total = 0;
+
+    array.forEach((prod) => {
+
+        total= total+prod.precio;
+
+        $("#carrito").append(
+            `<div class="burbuja">
+                <img src = ${prod.img} />
+                <h4>${prod.nombre}</h4>
+                <p>${prod.orden}</p>
+                <p>Precio: $${prod.precio}</p>
+                <button id="${prod.id}" class="eliminar" onclick="eliminarProducto(event)">Eliminar</button>
+            </div>`
+        );
+    });
+
+    $("#carrito").append(
+        `<span class="total">Total: $${total.toFixed(2)}</span>`
+    );
+}
+
+function eliminarProducto(e){
+    let id = Number(e.target.id);
+    let index = carrito.findIndex((p) => p.id === id);
+    
+    carrito.splice(index, 1);
+    imprimirCarrito(carrito);
+
+    localStorage.setItem("carrito", JSON.stringify(carrito));
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
 function init(){
     listarCategorias();
 }
@@ -62,7 +209,7 @@ function actualizarCarrito()
     const nodoCarrito = $("#carrito"); 
 
 }
-    
+*/
 
 
 
