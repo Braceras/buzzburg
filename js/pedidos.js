@@ -2,9 +2,10 @@
 //Menu Buzzburg
 
 $(()=> {
-    
+    mostrarTitulo();
     obtenerProductos();
     imprimirCarrito(carrito);
+    
 });
 
 let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
@@ -14,13 +15,12 @@ let productos;
 
 
 function mostrarTitulo(){
-
-    $(".mainClass").append(
-        `<div>
-        <h3>Realiza tu pedido en Buzzburg</h3>
-        </div>`
-    );
-    
+    const titulo = $("<h3></h3>");
+    titulo.html("Realiza tu pedido en Buzzburg");
+    titulo.hide();
+    const nodoTitutlo = $(".mainClass");
+    nodoTitutlo.prepend(titulo);
+    titulo.slideDown(1000);
 }
 
 
@@ -29,10 +29,7 @@ function obtenerProductos(){
     $.get("../data/productos.json", (respuesta, estado) => {
         productos = respuesta.products
         imprimirProductos(productos);
-    })
-        
-    
-    
+    });
 }
 
 
