@@ -2,7 +2,7 @@
 //Menu Buzzburg
 
 $(()=> {
-    mostrarTitulo();
+    mostrarContenido();
     obtenerProductos();
     imprimirCarrito(carrito);
     
@@ -14,16 +14,36 @@ let productos;
 
 
 
-function mostrarTitulo(){
+function mostrarContenido(){
+    const titulo = $("<h3></h3>");
+    titulo.html("¡Realiza tu pedido en Buzzburg!");
+    
+    const nodoTitutlo = $(".mainClass");
+    nodoTitutlo.prepend(titulo);
+    titulo.css({
+        "margin-bottom": "2rem",
+        "padding": "0.4rem"
+    });
+    titulo.animate({
+        "left": "10rem",
+        "opacity": "1",
+        "width": "18rem",
+        "height": "3rem"
+    },
+        (1000),
+        function(){
+            titulo.fadeOut(3000);
+        });
+    
+    
+}
+/*
     const titulo = $("<h3></h3>");
     titulo.html("Realiza tu pedido en Buzzburg");
     titulo.hide();
     const nodoTitutlo = $(".mainClass");
     nodoTitutlo.prepend(titulo);
-    titulo.slideDown(1000);
-}
-
-
+    titulo.slideDown(1000); */
 
 function obtenerProductos(){
     $.get("../data/productos.json", (respuesta, estado) => {
