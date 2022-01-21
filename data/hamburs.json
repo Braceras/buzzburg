@@ -1,5 +1,5 @@
 {
-    "products": [
+    "hams": [
         {
             "id": 1,
             "nombre": "Buzzburger",
@@ -50,3 +50,11 @@
         }
     ]
 }
+
+
+
+
+
+
+
+

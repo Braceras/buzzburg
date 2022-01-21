@@ -1,0 +1,36 @@
+{
+    "promos": [
+        {
+            "id": 1,
+            "nombre": "Promo 1",
+            "img": "../images/fotoSlider5.jpg",
+            "orden": "2x1 en Buzzburger con papas y gaseosas",
+            "adicionales": false, 
+            "precio": 800
+        },
+        {
+            "id": 2,
+            "nombre": "Promo 2",
+            "img": "../images/fotoSlider4.jpg",
+            "orden": "30% de descuento en Cheeseburguer",
+            "adicionales": false, 
+            "precio": 500
+        },
+        {
+            "id": 3,
+            "nombre": "Promo 3",
+            "img": "../images/fotoSlider3.jpg",
+            "orden": "2x1 en Butter Buzzburger con papas y gaseosas",
+            "adicionales": false, 
+            "precio": 800
+        },
+        {
+            "id": 4,
+            "nombre": "Promo 4",
+            "img": "../images/fotoSlider1.jpg",
+            "orden": "Double-Double Buzzburger con papas, gaseosa y heladod de regalo",
+            "adicionales": false, 
+            "precio": 800
+        }
+    ]
+}

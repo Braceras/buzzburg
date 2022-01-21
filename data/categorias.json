@@ -1,15 +1,15 @@
 { 
     "categories": [
         {
-            "id":1,
+            "categoria":"hams",
             "nombre": "Hamburguesas"
         },
         {
-            "id":2,
+            "categoria":"promos",
             "nombre": "Promociones"
         },
         {
-            "id":3,
+            "categoria":"postres",
             "nombre": "Postres"
         }
     ]
