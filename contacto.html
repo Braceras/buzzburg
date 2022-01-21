@@ -101,59 +101,41 @@
     <!--MAIN-->
     <main>
         <section>
-            <h2>CONTACTO</h2>
-            <p>No dudes en ponerte en contacto con nosotros si tienes dudas o sugerencias</p>
-            <form action="#">
-                <legend>Completa el formulario con tus datos</legend>
-                <div>
-                    <label for="name">*Nombres</label>
-                    <input type="text" name="nombres" id="nombres" required>
-                </div>
-                <div>
-                    <label for="apellidos">*Apellidos</label>
-                    <input type="text" name="apellidos" id="apellidos" required>
-                </div>
-                <div>
-                    <label for="email">*E-mail</label>
-                    <input type="email" id="email" required>
-                </div>
-                <div>
-                    <label for="telefono">Teléfono</label>
-                    <input type="text" id="telefono" required>
-                </div>
-                <div>
-                    <label for="ciudad">Ciudad</label>
-                    <input type="text" name="ciudad" id="ciudad" required>
-                </div>
-                <div>
-                    <label for="asunto" class="asunto">Asunto</label>
-                    <select>
-                        <option value="sugerencia">Sugerencia</option>
-                        <option value="consultas">Consultas</option>
-                        <option value="puertas abiertas">Puertas abiertas</option>
-                        <option value="critica">Critica</option>
-                        <option value="reclamo">Reclamo</option>
-                        <option value="elogio">Elogio</option>
-                        <option value="datos personales">Datos personales</option>
-                        <option value="otros">Otros</option>
-                    </select>
-                </div>
-                <div>
-                    <label for="comentario" name="comentario" class="comentario">*Mensaje</label>
-                    <textarea name="comentario" id="mensaje" cols="25" rows="1"></textarea> 
-
-                </div> 
-                <div>
-                    <input type="submit" value="Enviar" class="boton" id="botonSub" onclick="enviarInfo()"> 
-                    <input type="reset" value="Borrar Formulario" class="boton">
-                </div>
-            </form>
-
-            <div id="listaUsuarios">
-
-            </div>
+          <h2>CONTACTO</h2>
+          <p>No dudes en ponerte en contacto con nosotros!</p>
+          
+        <form>
+          <legend>Completa el formulario con tus datos</legend>
+        <div>
+            <label for="name">*Nombres</label>
+            <input type="text" name="nombres" id="nombres" required>
+        </div>
+        <div>
+            <label for="apellidos">*Apellidos</label>
+            <input type="text" name="apellidos" id="apellidos" required>
+        </div>
+        <div>
+            <label for="email">*E-mail</label>
+            <input type="email" id="email" required>
+        </div>
+        <div>
+            <label for="telefono">Teléfono</label>
+            <input type="text" id="telefono" required>
+        </div>
+        <div>
+            <label for="ciudad">Ciudad</label>
+            <input type="text" name="ciudad" id="ciudad" required>
+        </div>
+        <div>
+            <input type="submit" value="Enviar" class="boton" id="botonSub" onclick="enviarInfo()"> 
+            <input type="reset" value="Borrar Formulario" class="boton">
+        </div>
+    </form>
 
         </section>
+        <div id="listaUsuarios">
+
+        </div>
 
     </main>
 
@@ -183,8 +165,11 @@
 </footer>
 
 
+<!-- Remember to include jQuery :) -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js" defer></script>
 
-<script src="./js/contacto.js"></script>
+
+<script src="./js/contacto.js" defer></script>
 
 
 

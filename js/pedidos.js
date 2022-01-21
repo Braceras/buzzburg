@@ -83,6 +83,8 @@ function agregarAlCarrito(e){
     localStorage.setItem("carrito", JSON.stringify(carrito));
 
     imprimirCarrito(carrito);
+
+    
 }
 
 function imprimirCarrito(array){

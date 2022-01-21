@@ -1,4 +1,6 @@
 
+let arrayUsuarios = [];
+
 class Usuario{
     constructor(nombres , apellidos, email, telefono, ciudad)
     {
@@ -17,6 +19,7 @@ class Usuario{
         const newRegistro = new Usuario(nombreIngresado, apellidoIngresado, emailIngresado, telIngresado, locIngresado);
 
 
+        arrayUsuarios.push(newRegistro);
         localStorage.setItem(telIngresado, JSON.stringify(newRegistro))
 
 
@@ -41,8 +44,6 @@ function enviarInfo()
 
     const miUsuario = new Usuario("","","","");
     miUsuario.guardar(nombres, apellidos, email, telefono, ciudad);
-
-    alert("INFORMACIÓN ENVIADA DE FORMA EXISTOSA");
     
     window.location.href='contacto.html';
     
@@ -66,9 +67,3 @@ function printUsuariosRegistrados()
 
     
 } 
-
-
-
-
-
-
