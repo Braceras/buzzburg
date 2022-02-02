@@ -1,17 +1,23 @@
-class Producto{
 
-    constructor(categoria, nombre, img, orden, adicionales, precio)
+class Producto {
+
+    constructor(
+        categoria,
+        img,
+        nombre, 
+        orden, 
+        precio
+    )
     {
-        this.categoria = categoria;
-        this.nombre = nombre;
-        this.img = img;
-        this.orden = orden;
-        this.adicionales = adicionales;
-        this.precio = precio;
+        this.categoria=categoria
+        this.img=img
+        this.nombre=nombre
+        this.orden=orden
+        this.precio=precio
+    }
+
 
     
-    }
-    
-    
-    
+
+
 }

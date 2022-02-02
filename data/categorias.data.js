@@ -1,14 +1,15 @@
 const categorias = [
     {
         id:1,
-        nombre: "Hamburguesas"
+        nombre:"Hamburguesas"
     },
     {
         id:2,
-        nombre: "Promociones"
+        nombre:"Promociones"
     },
     {
         id:3,
-        nombre: "Postres"
+        nombre:"Postres"
     },
+
 ]

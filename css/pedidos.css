@@ -124,19 +124,21 @@ h1{
 
 
 /*Carrito*/
-.carrito{
+.carrito-container{
     display: block;
+    position: fixed;
+    background-color: #000;
     border-style: solid;
     border-color: #fff;
     border-radius: 0.6rem;
     height: 3rem;
     width: 3.2rem;
-    margin: 0rem 0rem 0rem 0rem;
+    margin: 0rem 0rem 0rem 60rem;
     align-items: center;
     
     
 }
-.carrito__reg{
+.carritoImg{
     width: 2rem;
     height: 2.5rem;
     margin-left: 0.4rem;
@@ -168,62 +170,239 @@ h1{
 .carrito__input:checked+.carrito__ham__content{
     clip-path: polygon(100% 0, 0 0, 0 100%, 100% 100%);
 } 
+.btnPagar{
+    margin: 1rem 1rem 1rem 0rem;
+    width: 10rem;
+    border: solid orange 0.1rem;
+    border-radius: 0.7rem;
+    background-color: #Fff;
+    
+}
+.btnPagar a{
+    text-decoration: none;
+    color: #000;
+}
+.valor{
+    background-color: #fff;
+    width: 2rem;
+    height: 2rem;
+}
 
 
 
 /*Main*/
 
 .mainClass{
-    margin: 2rem 2rem 2rem 2rem;
+    margin: 4rem 2rem 2rem 2rem;
     background-color: #fff;
-    border: solid #fff 2rem;
     border-radius: 1rem;
+    padding: 1rem;
+    
+   
+}
+.mainClass a{
+    text-decoration: none;
+    padding-left: 1rem;
 }
 
 .categorias{
-    width: 11rem;
+    display: inline-block;
 }
-
+.categorias ul{
+    width: 31rem;
+    
+    
+}
 .categorias li{
     list-style: none;
     margin: 1rem 1rem 0rem 0rem;
     padding: 0.3rem;
     border: solid orange 0.2rem;
     border-radius: 1rem;
+    display: inline-block;
 }
 
 .categorias li:hover{
     background-image: linear-gradient(to right, orange, #fff);
     cursor: pointer;
 }
-.burbuja{
+.prods{
     border: solid 0.1rem orange;
     border-radius: 1rem;
     padding: 1rem;
+    width: 30rem;
 }
-.burbuja img{
+.mainClass img{
     width: 10rem;
     height: 6rem;
     border-radius: 1rem;
     margin-bottom: 1rem;
+    
 }
 
 
 .mainClass button{
-    margin: 1rem 1rem 0rem 0rem;
-    width: 100%;
-    border: solid orange;
+    margin: 0.1rem 1rem 1rem 0rem;
+    width: 30rem;
+    border: solid orange 0.1rem;
     border-radius: 0.7rem;
     background-color: #Fff;
+    
+    
 }
 .mainClass button:hover{
     background-image: linear-gradient(to right, orange, #fff);
+}
+
+.carri{
+    width: 25rem;
+    border: solid 0.1rem orange;
+    border-radius: 1rem;
+    padding: 1rem;
+
+}
+
+#carrito img{
+    width: 10rem;
+    height: 6rem;
+    border-radius: 1rem;
+}
+#carrito button{
+    margin: 0.1rem 1rem 1rem 0rem;
+    width: 25rem;
+    border: solid orange 0.1rem;
+    border-radius: 0.7rem;
+    background-color: #Fff;
 }
 
 #foto1{
     width: 10rem;
     height: 6rem;
 }
+
+
+
+
+
+
+/*PAGOS*/
+.contenedor {
+	width: 90%;
+	max-width: 1000px;
+	padding: 40px 20px;
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+
+
+
+
+
+
+
+/* ---------- Formulario Tarjeta ----------*/
+.formulario-tarjeta {
+	background: #fff;
+	width: 40rem;
+	padding: 6rem 30px 30px 30px;
+	border-radius: 10px;
+
+	
+}
+
+
+
+
+
+.formulario-tarjeta input,
+.formulario-tarjeta select,
+.btn-enviar {
+	border: 2px solid #CED6E0;
+	font-size: 18px;
+	height: 50px;
+	width: 100%;
+	padding: 5px 12px;
+	transition: .3s ease all;
+	border-radius: 5px;
+}
+
+
+
+
+.formulario-tarjeta input {
+	margin-bottom: 20px;
+	text-transform: uppercase;
+}
+
+.formulario-tarjeta .flexbox {
+	display: flex;
+	justify-content: space-between;
+}
+
+.formulario-tarjeta .expira {
+	width: 100%;
+}
+
+.formulario-tarjeta .ccv {
+	min-width: 100px;
+}
+
+.formulario-tarjeta .grupo-select {
+	width: 100%;
+	margin-right: 15px;
+	position: relative;
+}
+
+.formulario-tarjeta select {
+	-webkit-appearance: none;
+}
+
+.formulario-tarjeta .grupo-select i {
+	position: absolute;
+	color: #CED6E0;
+	top: 18px;
+	right: 15px;
+	transition: .3s ease all;
+}
+
+.formulario-tarjeta .grupo-select:hover i {
+	color: #93bfed;
+}
+
+.formulario-tarjeta .btn-enviar {
+	border: none;
+	padding: 10px;
+	font-size: 22px;
+	color: #fff;
+	background: #2364d2;
+	box-shadow: 2px 2px 10px 0px rgba(0,85,212,0.4);
+	cursor: pointer;
+}
+
+.formulario-tarjeta .btn-enviar:hover {
+	background: #1850b1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -312,6 +491,7 @@ h5{
    font-family: 'Kanit', sans-serif;
 }
 
+
 @media only screen and (max-width: 1023px){
     .pedido button{
         display: none;
@@ -337,6 +517,8 @@ h5{
     .gridHeader{
         margin: 1.5rem 0rem 0rem 4.5rem;
     }
+
+
     h3{
         margin-left: 12%;
         font-size: 120%;
@@ -350,6 +532,16 @@ h5{
         margin: 0rem 0rem 0rem 32.5%;
         
     }
+   
+    .prods{
+        width: 20rem;
+    }
+    .mainClass button{
+        width: 20rem;
+    }
+    .categorias ul{
+        width: 20rem;
+    }
     .footerOptions{
         width: 80%;
         display: flex;
@@ -361,6 +553,18 @@ h5{
     }
     .logofooter{
         margin: 11% 0% 4% 32%;
+    }
+
+    .carrito-container{
+
+        margin: 0rem 0rem 0rem 17rem;
+
+    }
+    .formulario-tarjeta {
+        
+        width: 20rem;
+        
+        
     }
     
 } 
@@ -412,6 +616,27 @@ h5{
     .subnav__ham a{
         font-size: 0.8rem;
     }
+
+    .prods{
+        width: 30rem;
+    }
+    .mainClass button{
+        width: 30rem;
+    }
+    .categorias ul{
+        width: 20rem;
+    }
+    .carrito-container{
+
+        margin: 0rem 0rem 0rem 35rem;
+
+    }
+    .formulario-tarjeta {
+        
+        width: 20rem;
+        
+        
+    }
 }
 @media only screen and (max-width: 400px){
     .burgerIcon{
@@ -428,6 +653,18 @@ h5{
         margin: 0rem 0rem 0rem 31.5%;
         
     }
+    .mainClass{
+        padding: 0.7rem;
+    }
+    .prods{
+        width: 17rem;
+    }
+    .mainClass button{
+        width: 17rem;
+    }
+    .categorias ul{
+        width: 17rem;
+    }
     .footerOptions{
         width: 82%;
     }
@@ -436,6 +673,17 @@ h5{
     }
     .logofooter{
         margin: 14% 0% 4% 30%;
+    }
+    .carrito-container{
+
+        margin: 0rem 0rem 0rem 14.3rem;
+
+    }
+    .formulario-tarjeta {
+        
+        width: 20rem;
+        
+        
     }
 }
 @media only screen and (min-width: 769px){
@@ -448,7 +696,7 @@ h5{
     .gridHeader{
         margin: 1.5rem 0rem 0rem 3.5rem;
     }
-
+    
     
     h3{
         margin-left: 32%;
@@ -471,5 +719,67 @@ h5{
     }
     .logofooter{
         margin: 0% 0% 2% 80%;
+    }
+    .prods{
+        width: 35rem;
+    }
+    .mainClass button{
+        width: 35rem;
+    }
+    .formulario-tarjeta {
+        
+        width: 15rem;
+        
+        
+    }
+    
+    
+}
+@media only screen and (max-width: 300px){
+    .burgerIcon{
+        margin-left: 2%;
+    }
+    h3{
+        margin-left: 7%;
+        font-size: 120%;
+    }
+    #imgApp{
+        margin: 0rem 0rem 0rem 40%;
+    }
+    .botonDescargar{
+        margin: 0rem 0rem 0rem 31.5%;
+        
+    }
+    .mainClass{
+        padding: 0.7rem;
+    }
+    .prods{
+        width: 12rem;
+    }
+    .mainClass button{
+        width: 12rem;
+    }
+    .categorias ul{
+        width: 12rem;
+    }
+    .footerOptions{
+        width: 82%;
+    }
+    .footerOptions li a{
+        font-size: 60%;
+    }
+    .logofooter{
+        margin: 14% 0% 4% 30%;
+    }
+    .carrito-container{
+
+        margin: 0rem 0rem 0rem 8.8rem;
+
+    }
+    .formulario-tarjeta {
+        
+        width: 15rem;
+        
+        
     }
 }

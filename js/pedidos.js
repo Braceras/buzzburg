@@ -1,121 +1,141 @@
-//Buzzburg
-//Menu Buzzburg
 
-$(()=> {
-    mostrarContenido();
-    
-    obtenerHams();
-    imprimirCarrito(carrito);
-    
-    
-});
-
-let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
-
-let hamburguesas = JSON.parse(localStorage.getItem("hamburguesas")) || [];
-
-let hamburs;
+ const carrito = new Carrito([], {});
 
 
 
-function mostrarContenido(){
-    const titulo = $("<h3></h3>");
-    titulo.html("¡Realiza tu pedido en Buzzburg!");
-    
-    const nodoTitutlo = $(".mainClass");
-    nodoTitutlo.prepend(titulo);
-    titulo.css({
-        "margin-bottom": "2rem",
-        "padding": "0.4rem"
-    });
-    titulo.animate({
-        "left": "10rem",
-        "opacity": "1",
-        "width": "18rem",
-        "height": "3rem"
-    },
-        (1000),
-        function(){
-            titulo.fadeOut(3000);
-        });
-    
-    
+function init()
+{
+   listarCategorias();
+   
+   
 }
 
 
-function obtenerHams(){
-    
-    $.get("../data/hamburs.json", (respuesta, estado) => {
-        ham = respuesta.hams;
-        imprimirHams(ham);
-    });
+function listarCategorias(){
+
+      const nodoCategorias = document.getElementById("categorias")
+      let contenido="<ul>";
+
+      for(categoria of categorias)
+      {
+         contenido+=`<li onclick="listarProductos(${categoria.id})">${categoria.nombre}</li>`;
+      }
+      
+      contenido+="</ul>";
+
+      nodoCategorias.innerHTML=contenido;
+
+
+
 }
 
 
+function listarProductos(idCategoria)
+{
+   const nodoProductos = document.getElementById("productos")
+   nodoProductos.innerHTML="";
+   let lista=document.createElement("div");
 
-function imprimirHams(array){
-    
-    $("#productos").empty();
-    array.forEach((prod) => {
-        $("#productos").append(
-            `   <div class="burbuja">
-                <img src = ${prod.img} />
-                <h4>${prod.nombre}</h4>
-                <p>${prod.orden}</p>
-                <p>Precio: $${prod.precio}</p>
-                <button id="${prod.id}" onclick="agregarAlCarrito(event)">Agregar a mi pedido</button></div>`
-        );
-    });
-    
-    
+   const productosCategoria= productos.filter(element=> element.categoria===idCategoria);
+
+
+   for(let i=0;i<productosCategoria.length; i++)
+   {
+      let producto = productosCategoria[i];
+
+      let item  = document.createElement("div");
+      item.innerHTML=`<div class="prods"><div><h3>${producto.nombre}</h3></div>
+                        <div class=""><img src = ${producto.img} /></div>
+                        <div>${producto.orden}</div>
+                      <div>$${producto.precio}</div></div>
+                      `;
+
+      
+
+      let boton = document.createElement("button");
+      
+      boton.onclick = () => {
+         
+         carrito.agregarProducto(producto);
+         carrito.guardarPedido(producto)
+         actualizarCarrito();
+         
+            
+      }
+      
+
+      boton.innerHTML="Agregar a mi pedido";
+
+      
+
+      item.appendChild(boton);
+
+      lista.appendChild(item);
+      
+
+   }
+   nodoProductos.appendChild(lista);
+
+   
 }
 
+function actualizarCarrito()
+{
 
-function agregarAlCarrito(e){
-    
-    let id = Number(e.target.id);
-    let productoElegido = ham.find((p) => p.id === id);
-    
-    carrito.push(productoElegido);
 
-    localStorage.setItem("carrito", JSON.stringify(carrito));
+   //Listar el carrito
 
-    imprimirCarrito(carrito);
+   const nodoCarrito = document.getElementById("carrito");
+   nodoCarrito.innerHTML="";
+   
+   const productos = carrito.productos;
 
-    
+   let contador = 0;
+   while(contador<productos.length)
+   {
+      let producto = productos[contador];
+
+      let item  = document.createElement("div");
+      item.innerHTML=`  <div class="carri"><div><h3>${producto.nombre}</h3></div>
+                        <div class=""><img src = ${producto.img} /></div>
+                        <div>${producto.orden}</div>
+                        <div>$${producto.precio}</div></div>
+                      `;
+      nodoCarrito.appendChild(item);
+
+      
+      let botonQuitar = document.createElement("button");
+      botonQuitar.innerHTML="ELIMINAR DEL CARRITO";
+      botonQuitar.onclick=()=>
+      {
+         
+               carrito.quitarProducto(producto);
+               actualizarCarrito();
+         
+      }
+      
+
+      nodoCarrito.appendChild(botonQuitar);
+
+      contador++;
+
+   }
+   const nodoContendorTotal = document.createElement("div");
+   nodoContendorTotal.innerHTML="<hr>";
+   
+   
+   const total = carrito.totalizar();
+
+   const nodoTotal = document.createElement("div");
+   nodoTotal.innerHTML= "Total: $" + total;
+
+   nodoContendorTotal.appendChild(nodoTotal);
+
+   nodoCarrito.appendChild(nodoContendorTotal);
+
+
+
+
+
+
 }
-
-function imprimirCarrito(array){
-    $("#carrito").empty();
-    let total = 0;
-
-    array.forEach((prod) => {
-
-        total= total+prod.precio;
-
-        $("#carrito").append(
-            `<div class="burbuja">
-                <img src = ${prod.img} />
-                <h4>${prod.nombre}</h4>
-                <p>${prod.orden}</p>
-                <p>Precio: $${prod.precio}</p>
-                <button id="${prod.id}" class="eliminar" onclick="eliminarProducto(event)">Eliminar</button>
-            </div>`
-        );
-    });
-
-    $("#carrito").append(
-        `<span class="total">Total: $${total.toFixed(2)}</span>`
-    );
-}
-
-function eliminarProducto(e){
-    let id = Number(e.target.id);
-    let index = carrito.findIndex((p) => p.id === id);
-    
-    carrito.splice(index, 1);
-    imprimirCarrito(carrito);
-
-    localStorage.setItem("carrito", JSON.stringify(carrito));
-}
-

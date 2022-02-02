@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="./css/pedidos.css">
    
 </head>
-<body onload="init()">
+<body>
   <div class="gridContainer">
         <!--HEADER-->
     <header class="gridHeader">
@@ -26,42 +26,66 @@
         </div> 
         <h1>buzzburg</h1> 
 
-        <div class="carrito-container">
-            <a href="#modal" rel="modal:open">
-                <img class="carritoImg" src="./images/carritoDeCompras2.png"  alt="carrito icono">
-            </a>
-            
-            
-        </div>
-        
-        
-        
-        </div>
-
     </header>
 
 
 
-    <!--MAIN -->
-
-    
+    <!--MAIN-->
     <main>
-        <div class="mainClass">
-            <div class="categorias" id="categorias">
-                
-            </div>    
+        <div class="contenedor">
+    
+            <!-- Formulario -->
+            <form action="" id="formulario-tarjeta" class="formulario-tarjeta">
+                <div class="grupo">
+                    <label for="inputNumero">Número Tarjeta</label>
+                    <input type="text" id="inputNumero" maxlength="19" autocomplete="off">
+                </div>
+                <div class="grupo">
+                    <label for="inputNombre">Nombre</label>
+                    <input type="text" id="inputNombre" maxlength="19" autocomplete="off">
+                </div>
+                <div class="flexbox">
+                    <div class="grupo expira">
+                        <label for="selectMes">Expiracion</label>
+                        <div class="flexbox">
+                            <div class="grupo-select">
+                                <select name="mes" id="selectMes">
+                                    <option disabled selected>Mes</option>
+                                </select>
+                                <i class="fas fa-angle-down"></i>
+                            </div>
+                            <div class="grupo-select">
+                                <select name="year" id="selectYear">
+                                    <option disabled selected>Año</option>
+                                </select>
+                                <i class="fas fa-angle-down"></i>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="grupo ccv">
+                        <label for="inputCCV">CCV</label>
+                        <input type="text" id="inputCCV" maxlength="3">
+                    </div>
+                </div>
+                <button type="submit" class="btn-enviar">Enviar</button>
+            </form>
         </div>
-        <div class="mainClass" id="app">
-            <div class="productos" id="productos">
-
-            </div>
-        </div>
+        
     </main>
 
 
 
-     <!--FOOTER--> 
-     <footer class="gridFooter">
+
+
+
+
+
+
+
+
+    <!--FOOTER--> 
+    <footer class="gridFooter">
         <h3>DESCARGA NUESTRA APP</h3>
         <img src="images/phone.png" width="100px" alt="phone" id="imgApp">
         <div class="botonDescargar">
@@ -95,6 +119,9 @@
     <script language="javascript" src="./data/categorias.data.js" defer></script>
     <script language="javascript" src="./data/productos.data.js" defer></script>
 
+    <!--font-->
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+
     <!-- Sweer Alert -->
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11" defer></script>
 
@@ -106,55 +133,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
 
     <!-- Archivo Js-->
-    <script language="javascript" src="./js/pedidos.js" defer></script> 
+    <script language="javascript" src="./js/pagos.js" defer></script> 
 
 
 
 </body>
 
-    <div id="modal" class="modal">
-        <h3>Tu pedido</h3>
-        <table>
-            <tbody id="carrito">
-                <tr>
-                    
-                </tr>
-            </tbody>
-        </table>
-        <button class="btnPagar"><a href="pagos.html">Realizar Pedido</a></button>
-
-        
-
-    </div>
-
-
 
 
 </html>
-
-
-<!--
-<script language="javascript">
-
-    $(()=>{ init();})
-</script>--> 
-
-
-
-
-
-
-<!--
-<div class="carrito-container">
-    <label for="carrito" class="carrito__label">
-      <img src="./images/bx-menu.svg" class="carrito__reg">
-    </label>
-    <input type="checkbox" id="carrito" class="carrito__input">
-
-    <div class="carrito__ham__content"> 
-
-      
-    </div>-->
-
-
-
