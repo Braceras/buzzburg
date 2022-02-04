@@ -50,20 +50,3 @@ function enviarInfo()
 }
 
 
-function printUsuariosRegistrados()
-{
-    let i=0;
-    
-    for(let i=0; i<localStorage.length; i++)
-    {
-        const llave = localStorage.key(i);
-        const dato = JSON.parse(localStorage.getItem(llave));
-        
-        const plantillaUsuario = `<p class="usuario">El telefono de: ${dato.nombres+" "+dato.apellidos} es <i>${dato.telefono}</i></p>` 
-
-        document.getElementById("listaUsuarios").innerHTML=plantillaUsuario;
-        
-    }
-
-    
-} 

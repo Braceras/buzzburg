@@ -6,7 +6,6 @@ const formulario = document.querySelector('#formulario-tarjeta'),
 
 
 
-
 // * Select del mes generado dinamicamente.
 for(let i = 1; i <= 12; i++){
 	let opcion = document.createElement('option');
@@ -56,3 +55,16 @@ formulario.inputCCV.addEventListener('keyup', () => {
 
 	
 });
+
+
+
+const valor = document.getElementsByClassName(".valor");
+const btnSuma = document.getElementsByClassName(".btn__sumar");
+
+let contador = 0;
+
+	 btnSuma.addEventListener("click", () => {
+		contador++;
+		console.log(contador);
+	 })
+	

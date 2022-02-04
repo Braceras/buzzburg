@@ -30,6 +30,7 @@ function listarCategorias(){
 }
 
 
+
 function listarProductos(idCategoria)
 {
    const nodoProductos = document.getElementById("productos")
@@ -48,7 +49,7 @@ function listarProductos(idCategoria)
                         <div class=""><img src = ${producto.img} /></div>
                         <div>${producto.orden}</div>
                       <div>$${producto.precio}</div></div>
-                      `;
+                      `;2
 
       
 
@@ -57,7 +58,7 @@ function listarProductos(idCategoria)
       boton.onclick = () => {
          
          carrito.agregarProducto(producto);
-         carrito.guardarPedido(producto)
+         carrito.guardarPedido(producto);
          actualizarCarrito();
          
             
@@ -97,13 +98,18 @@ function actualizarCarrito()
 
       let item  = document.createElement("div");
       item.innerHTML=`  <div class="carri"><div><h3>${producto.nombre}</h3></div>
-                        <div class=""><img src = ${producto.img} /></div>
+                        <div class="imgCarrito"><img src = ${producto.img} /></div>
+                        <input class="contadorProd" type="number" min="1" value=${producto.cantidad}>
                         <div>${producto.orden}</div>
-                        <div>$${producto.precio}</div></div>
+                        <div>Precio: $${producto.precio}</div></div>
                       `;
       nodoCarrito.appendChild(item);
 
       
+
+
+
+
       let botonQuitar = document.createElement("button");
       botonQuitar.innerHTML="ELIMINAR DEL CARRITO";
       botonQuitar.onclick=()=>

@@ -13,13 +13,26 @@ class Carrito {
         this.detallesOrden=detallesOrden
     }
     guardarPedido(producto){
-         const pedido = localStorage.setItem('productos', JSON.stringify(producto));
-         return pedido;
-        
-
+        localStorage.setItem('productos', JSON.stringify(producto));
     }
+    
+   
 
     agregarProducto(producto){
+
+        const contadorProd = document.getElementsByClassName("contadorProd");
+            
+            for(let i=0; carrito.length;i++){
+                if(carrito[i].nombre.trim() === producto.nombre.trim()){
+                    console.log(carrito);
+                    carrito[i].cantidad++;
+                    const contadorValue = contadorProd[i]
+                    contadorValue.value++;
+                    this.totalizar();
+                    return null;
+                }
+            }
+    
         this.productos.push(producto);
     }
 
